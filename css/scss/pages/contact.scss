@@ -1,0 +1,52 @@
+.dark-mode {
+    #contact-section {
+        .contact-bg {
+            background-color: var(--color-gray-100-dark);
+        }
+    }
+}
+
+#contact-section {
+    
+    .contact-bg {
+        padding-top: 5rem;
+        background-color: var(--color-gray-200);
+        
+        .link-tree {
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            color: var(--color-gray-600);
+            gap: .5rem;
+            font-size: .8rem;
+            
+            a {
+                color: var(--color-gray-600);
+                text-decoration: none;
+            }
+            
+            .active-link {
+                color: var(--color-primary);
+            }
+        }
+
+        .contact-upper {
+            display: grid;
+            grid-template-columns: 60% 40%;
+        }
+
+        .cards {
+            display: grid;
+
+            .card {
+                display: flex;
+                
+            }
+        }
+    }
+    
+    
+    @media (width < 1400px) {
+        display: none;
+    }
+}
