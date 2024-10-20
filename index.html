@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Silly-con has time-robbing features, so don't put too much effort into it. . .">
+
+    <link rel="shortcut icon" href="/images/silicon-favicon.ico" type="image/x-icon">
+    <!-- CDN FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- CSS files -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- <link rel="stylesheet" href="/css/themes.css"> -->
+
+    <title>Silicon</title>
+
+</head>
+
+<body>
+    <!-- The Wrapper structure mainly comes from school guidance material. (Tips & Trixs video) -->
+    <div class="wrapper">
+    
+        <!-- I have created thick visual breakers so one can find easier. -->
+        <!-- <a href="https://www.coolgenerator.com/ascii-text-generator">ANSI Shadow</a> -->
+
+
+
+        <!-- #################################################################################################### -->
+        <!-- #################################################################################################### -->
+                                <!-- ███╗   ██╗ █████╗ ██╗   ██╗██████╗  █████╗ ██████╗  -->
+                                <!-- ████╗  ██║██╔══██╗██║   ██║██╔══██╗██╔══██╗██╔══██╗ -->
+                                <!-- ██╔██╗ ██║███████║██║   ██║██████╔╝███████║██████╔╝ -->
+                                <!-- ██║╚██╗██║██╔══██║╚██╗ ██╔╝██╔══██╗██╔══██║██╔══██╗ -->
+                                <!-- ██║ ╚████║██║  ██║ ╚████╔╝ ██████╔╝██║  ██║██║  ██║ -->
+                                <!-- ╚═╝  ╚═══╝╚═╝  ╚═╝  ╚═══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ -->
+        <!-- #################################################################################################### -->
+        <!-- #################################################################################################### -->
+        
+        
+
+        <!-- School Guidance Material Code -->
+        <!-- Navigation Bar is mainly recreated from school guidance material. (Tips & Trix video) -->
+        <!-- <nav class="navigation"> -->
+        <!-- uses _navbar.css -->
+            
+        <header id="navbar-section" class="sticky-header">
+            
+            <div class="container">
+            
+                <a id="logo" href="/index.html">
+                    <img id="logo-img" src="images/silicon-logo.svg" alt="Silicon Logotype">
+                    <img id="logo-text" src="images/light/logo/silicon-text-light.svg" alt="Text Silicon">
+                </a>
+                
+                <nav id="main-menu" class="navbar">
+                    <a class="nav-link" href="#brands-section">Features</a>
+                    <a class="nav-link" href="#faq-section">F.A.Q</a>
+                    <a class="nav-link" href="#contact-section">Contact us</a>
+                </nav>
+                
+                <div id="darkmode-toggle-switch" class="btn-toggle-switch">
+                    <span class="label">Dark mode</span>
+                    <label for="darkmode-switch" class="toggle-switch">
+                        <input id="darkmode-switch" type="checkbox" aria-label="dark-mode input toggle">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                
+                <a id="auth-signin-create" href="#" class="btn-primary">
+                    <i class="fa-regular fa-user" aria-hidden="true"></i>
+                    <span>Sign in / up</span>
+                </a>
+                
+                <button class="btn-mobile" title="Menu borked"  aria-label="menu button">
+                    <i class="fa-solid fa-bars"></i>
+                </button> 
+                
+            </div>
+        </header>
+
+
+
+        <!-- #################################################################################################### -->
+        <!-- #################################################################################################### -->
+                                        <!-- ███╗   ███╗ █████╗ ██╗███╗   ██╗ -->
+                                        <!-- ████╗ ████║██╔══██╗██║████╗  ██║ -->
+                                        <!-- ██╔████╔██║███████║██║██╔██╗ ██║ -->
+                                        <!-- ██║╚██╔╝██║██╔══██║██║██║╚██╗██║ -->
+                                        <!-- ██║ ╚═╝ ██║██║  ██║██║██║ ╚████║ -->
+                                        <!-- ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ -->
+        <!-- #################################################################################################### -->
+        <!-- #################################################################################################### -->
+
+
+
+        <main>    
+            
+
+
+            <!-- #################################################################################################### -->
+            <!-- #################################################################################################### -->
+                            <!-- ███████╗██╗  ██╗ ██████╗ ██╗    ██╗ ██████╗ █████╗ ███████╗███████╗ -->
+                            <!-- ██╔════╝██║  ██║██╔═══██╗██║    ██║██╔════╝██╔══██╗██╔════╝██╔════╝ -->
+                            <!-- ███████╗███████║██║   ██║██║ █╗ ██║██║     ███████║███████╗█████╗   --> 
+                            <!-- ╚════██║██╔══██║██║   ██║██║███╗██║██║     ██╔══██║╚════██║██╔══╝   -->  
+                            <!-- ███████║██║  ██║╚██████╔╝╚███╔███╔╝╚██████╗██║  ██║███████║███████╗ -->
+                            <!-- ╚══════╝╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝  ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝ -->
+            <!-- #################################################################################################### -->
+            <!-- #################################################################################################### -->
+
+
+
+            <!-- BASED ON SCHOOL GUIDANCE MATERIAL -->
+            <!-- uses _showcase.css -->
+            <section id="showcase-section" class="first-section bg-gradient" aria-label="Showcase section">
+                
+                <div class="showcase">
+                    <div class="container rectifier">
+                    
+                        <div class="sc-headline">
+                            <h1>Manage all Your<br/>Money in One App</h1>
+                        </div>
+                    
+                        <div class="sc-content">
+                            <p id="sc-text">
+                                We offer you a new generation of the mobile banking. <span class="tablet-line-break"><br/></span> Save, spend & manage money in your pocket.
+                            </p>
+                            <div class="buttons">
+                                <a class="btn-download-app" href="#"><img id="appstore" src="/images/light/market/appstore-light.svg" alt="appstore"></a>
+                                <a class="btn-download-app" href="#"><img id="playstore" src="/images/light/market/googleplay-light.svg" alt="playstore"></a>
+                            </div>
+                            <a href="#carousel-section" class="discover-more">
+                                <span class="btn-circle">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                                <span class="changecolordamnit">Discover more</span>
+                            </a>
+                        </div>
+                    
+                        <div class="images">
+                            <img class="img-back" src="images/desktop/iphone-mybudget-desktop-back.svg" loading="lazy" alt="iphone my budget">
+                            <img class="img-front" src="images/desktop/iphone-mycards-desktop-front.svg" loading="lazy" alt="iphone my cards">
+                        </div>
+                    </div>
+                </div>
+            
+            </section>
+            
+
+
+            <!-- #################################################################################################### -->
+            <!-- #################################################################################################### -->
+                                    <!-- ██████╗ ██████╗  █████╗ ███╗   ██╗██████╗ ███████╗ -->
+                                    <!-- ██╔══██╗██╔══██╗██╔══██╗████╗  ██║██╔══██╗██╔════╝ -->
+                                    <!-- ██████╔╝██████╔╝███████║██╔██╗ ██║██║  ██║███████╗ -->
+                                    <!-- ██╔══██╗██╔══██╗██╔══██║██║╚██╗██║██║  ██║╚════██║ -->
+                                    <!-- ██████╔╝██║  ██║██║  ██║██║ ╚████║██████╔╝███████║ -->
+                                    <!-- ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝ -->
+            <!-- #################################################################################################### -->
+            <!-- #################################################################################################### -->
+               
+            
+            
+            <!-- School Guidance Material Code -->
+            <!-- Brand bar code is recreated from school guidance material (Tips & Trix video) -->
+            <!-- uses _brands.css -->
+            <section id="brands-section">
+                
+                <div class="container">
+
+                    <div id="brand-1" class="brand-box">
+                        <img src="images/tablet+/brand-1.svg" loading="lazy" alt="Brand Logo 1">
+                    </div>
+
+                    <div id="brand-2" class="brand-box">
+                        <img src="images/tablet+/brand-2.svg" loading="lazy" alt="Brand Logo 2">
+                    </div>
+
+                    <div id="brand-3" class="brand-box">
+                        <img src="images/tablet+/brand-3.svg" loading="lazy" alt="Brand Logo 3">
+                    </div>
+
+                    <div id="brand-4" class="brand-box">
+                        <img src="images/tablet+/brand-4.svg" loading="lazy" alt="Brand Logo 4">
+                    </div>
+
+                    <div id="brand-5" class="brand-box">
+                        <img src="images/desktop/brand-5.svg" loading="lazy" alt="Brand Logo 5">
+                    </div>
+
+                    <div id="brand-6" class="brand-box">
+                        <img src="images/desktop/brand-6.svg" loading="lazy" alt="Brand Logo 6">
+                    </div>
+                
+                </div>
+            </section>
+            
+
+
+            <!-- #################################################################################################### -->
+            <!-- #################################################################################################### -->
+                            <!-- ███████╗███████╗ █████╗ ████████╗██╗   ██╗██████╗ ███████╗███████╗ -->
+                            <!-- ██╔════╝██╔════╝██╔══██╗╚══██╔══╝██║   ██║██╔══██╗██╔════╝██╔════╝ -->
+                            <!-- █████╗  █████╗  ███████║   ██║   ██║   ██║██████╔╝█████╗  ███████╗ -->
+                            <!-- ██╔══╝  ██╔══╝  ██╔══██║   ██║   ██║   ██║██╔══██╗██╔══╝  ╚════██║ -->
+                            <!-- ██║     ███████╗██║  ██║   ██║   ╚██████╔╝██║  ██║███████╗███████║ -->
+                            <!-- ╚═╝     ╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝ -->
+            <!-- #################################################################################################### -->
+            <!-- #################################################################################################### -->
+                                                    <!-- FEATURES 1 -->
+
+
+            <!-- uses _app-features-section.css -->
+            <section id="app-features-section" aria-label="Features section">
+                <div class="container flexit">
+
+                    <img id="af-phone-image" src="/images/desktop/af-phone.svg" loading="lazy" alt="iphone 12 pro">
+
+                    <div class="af-text-box">
+                        <div class="af-text-above">
+                            <h2>App Features</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Proin volutpat mollis egestas. Nam luctus facilisis ultrices. 
+                                Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
+                        </div>
+                    
+                        <div class="af-text-below">
+
+                            <div id="feature-1" class="features">
+                    
+                                <div class="af-img-container">
+                                    <img id="af-payments" class="af-img" src="images/mobile+/payments.svg" alt="payments icon">
+                                </div>
+                    
+                                <div class="af-text-container">
+                                    <h3>Easy Payments</h3>
+                                    <p>Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
+                                </div>
+                            </div>
+                            
+                            <div id="feature-2" class="features">
+                                <div class="af-img-container">
+                                    <img id="af-security" class="af-img" src="images/mobile+/security.svg" alt="security icon">
+                                </div>
+                    
+                                <div class="af-text-container">
+                                    <h3>Data Security</h3>
+                                    <p>Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum non.</p>
+                                </div>
+                            </div>
+                            
+                            <div id="feature-3" class="features">
+                                <div class="af-img-container">
+                                    <img id="af-statistics" class="af-img" src="images/mobile+/statistics.svg" alt="statistics icon">
+                                </div>
+                    
+                                <div class="af-text-container">
+                                    <h3>Cost Statistics</h3>
+                                    <p>Mattis urna ultricies non amet, purus in auctor non. Odio vulputate ac nibh.</p>
+                                </div>
+                    
+                            </div>
+                            
+                            <div id="feature-4" class="features">
+                                <div class="af-img-container">
+                                    <img id="af-support" class="af-img" src="/images/mobile+/support.svg" alt="support icon">
+                                </div>
+                    
+                                <div class="af-text-container">
+                                    <h3>Support 24/7</h3>
+                                    <p>A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
+                                </div>
+                            </div>
+                            
+                            <div id="feature-5" class="features">
+                                <div class="af-img-container">
+                                    <img id="af-cashback" class="af-img" src="images/mobile+/cashback.svg" alt="cashback icon">
+                                </div>
+                                <div class="af-text-container">
+                                    <h3>Regular Cashback</h3>
+                                    <p>Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet eleifend.</p>
+                                </div>
+                            </div>
+                            
+                            <div id="feature-6" class="features">
+                                <div class="af-img-container">
+                                    <img id="af-standards" class="af-img" src="images/mobile+/happy.svg" alt="happy icon">
+                                </div>
+                                <div class="af-text-container">
+                                    <h3>Top Standards</h3>
+                                    <p>Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis dolor arcu.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+
+
+
+            <!-- #################################################################################################### -->
+            <!-- #################################################################################################### -->
+                            <!--  ██████╗ █████╗ ██████╗  ██████╗ ██╗   ██╗███████╗███████╗██╗      -->    
+                            <!-- ██╔════╝██╔══██╗██╔══██╗██╔═══██╗██║   ██║██╔════╝██╔════╝██║      -->    
+                            <!-- ██║     ███████║██████╔╝██║   ██║██║   ██║███████╗█████╗  ██║      -->    
+                            <!-- ██║     ██╔══██║██╔══██╗██║   ██║██║   ██║╚════██║██╔══╝  ██║      -->    
+                            <!-- ╚██████╗██║  ██║██║  ██║╚██████╔╝╚██████╔╝███████║███████╗███████╗ -->
+                            <!-- ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚══════╝╚══════╝╚══════╝  -->
+            <!-- #################################################################################################### -->
+            <!-- #################################################################################################### -->
+
+
+           
+            <!-- Version 8 ( uses _carousel.css) -->
+            <section id="carousel-section" aria-label="Carousel">
+                <div class="container c-wrap">
+
+                    <div class="c-title">
+                        <h2>How Does It Work?</h2>
+                    </div>
+                    
+                    <!-- Mobile Carousel - Completed. -->
+                    <section class="mobile-carousel">
+                        
+                        <div class="carousel-wrapper">
+                            <div class="carousel-grid">
+                                <div class="c-layers c-top-layer">
+                                    <img src="/images/carousel/mobile/mobile-layer_1.svg" loading="lazy" alt="iphone-top-layer" class="outer-layers layer-1" aria-hidden="true">
+                                </div>
+                                <div id="c-slide-layer" class="c-middle-layer" draggable="true">
+                                    <div class="c-layers left">
+                                        <img src="/images/carousel/mobile/mobile-layer_2-1.svg" loading="lazy" alt="silicon image" class="inner-layers image-1">
+                                    </div>
+                                    <div class="c-layers middle">
+                                        <img src="/images/carousel/mobile/mobile-layer-2-2.svg" loading="lazy" alt="silicon image" class="inner-layers image-2">
+                                    </div>
+                                    <div class="c-layers right">
+                                        <img src="/images/carousel/mobile/mobile-layer_2-3.svg" loading="lazy" alt="silicon image" class="inner-layers image-3">
+                                    </div>
+                                </div>
+
+                                <div class="c-layers c-bottom-layer">
+                                    <img src="/images/carousel/mobile/mobile-layer_3.svg" loading="lazy" alt="black" class="outer-layers layer-3 " aria-hidden="true">
+                                </div>
+
+                                <!-- carousel-mobile.js -->
+                                <div class="mobile-text-container">
+                                    <h3 class="carousel-heading"></h3>
+                                    <p class="carousel-text"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    
+                    <!-- Tablet Carousel - In progress -->
+                    <section class="tablet-carousel">
+
+                        <div class="carousel-wrapper">
+                                
+                            <div id="t-slide-box" class="slide-box" draggable="true">
+                                <div class="slide-layers c-box-left">
+                                    <img id="t-1" src="/images/carousel/tablet/tablet-layer_2-1.svg" loading="lazy" alt="silicon image" class="slide-layer left">
+                                </div>
+                                <div class="slide-layers c-box-middle">
+                                    <img id="t-2" src="/images/carousel/tablet/tablet-layer_2-2.svg" loading="lazy" alt="silicon image" class="slide-layer middle">
+                                </div>
+                                <div class="slide-layers c-box-right">
+                                    <img id="t-3" src="/images/carousel/tablet/tablet-layer_2-3.svg" loading="lazy" alt="silicon image" class="slide-layer right">
+                                </div> 
+                            </div>
+                            
+                            <div class="slide-bg t-shell-outline" aria-hidden="true">
+                                <img id="t-shell-outline" src="/images/carousel/mobile/mobile-layer_1.svg" loading="lazy" alt="iphone-top-layer" class="bottom-layer">
+                            </div>
+
+                            <div class="slide-bg t-shell-bg" aria-hidden="true">
+                                <img id="t-shell-bg" src="/images/carousel/mobile/mobile-layer_3.svg" loading="lazy" alt="slide background" class="bottom-layer">
+                            </div>
+
+                            <!-- carousel-t-dt.js -->
+                            <div class="carousel-text-container">
+                                <h3 class="carousel-heading"></h3>
+                                <p class="carousel-text"></p>
+                            </div>
+
+                        </div>
+                    </section>
+                    
+                    <!-- Desktop Carousel - In progress -->
+                    <section class="desktop-carousel">
+                        <div class="carousel-wrapper">
+                            
+                                
+                            <div id="d-slide-box" class="slide-box" draggable="true">
+                                <div class="slide-layers c-box-left mask">
+                                    <img id="d-1" src="/images/carousel/desktop/desktop-layer-2-1.svg" loading="lazy" alt="silicon image" class="slide-layer left">
+                                </div>
+                                <div class="slide-layers c-box-middle mask">
+                                    <img id="d-2" src="/images/carousel/desktop/desktop-layer-2-2.svg" loading="lazy" alt="silicon image" class="slide-layer middle">
+                                </div>
+                                <div class="slide-layers c-box-right mask">
+                                    <img id="d-3" src="/images/carousel/desktop/desktop-layer-2-3.svg" loading="lazy" alt="silicon image" class="slide-layer right">
+                                </div>   
+                            </div>
+                            
+                            <div class="slide-bg" aria-hidden="true">
+                                <img id="d-shell" src="/images/carousel/desktop/desktop-layer_3.svg" loading="lazy" alt="iphone-shell" class="bottom-layer">
+                            </div>
+
+                            <!-- carousel-t-dt.js -->
+                            <div class="carousel-text-container">
+                                <h3 class="carousel-heading"></h3>
+                                <p class="carousel-text"></p>
+                            </div>
+                            
+                        </div>
+                    </section>
+
+                </div>
+            </section>
+
+
+
+            <!-- #################################################################################################### -->
+            <!-- #################################################################################################### -->
+                            <!-- ███████╗███████╗ █████╗ ████████╗██╗   ██╗██████╗ ███████╗███████╗ -->
+                            <!-- ██╔════╝██╔════╝██╔══██╗╚══██╔══╝██║   ██║██╔══██╗██╔════╝██╔════╝ -->
+                            <!-- █████╗  █████╗  ███████║   ██║   ██║   ██║██████╔╝█████╗  ███████╗ -->
+                            <!-- ██╔══╝  ██╔══╝  ██╔══██║   ██║   ██║   ██║██╔══██╗██╔══╝  ╚════██║ -->
+                            <!-- ██║     ███████╗██║  ██║   ██║   ╚██████╔╝██║  ██║███████╗███████║ -->
+                            <!-- ╚═╝     ╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝ -->
+            <!-- #################################################################################################### -->
+            <!-- #################################################################################################### -->
+                                                    <!-- FEATURES 2 -->
+
+
+
+                <section id="app-features-followup-section" aria-label="Features section continuation">
+                    
+                    <div class="container sf-grid-wrap">
+                        <div class="sf-upper-box">
+                            <div class="text-cluster-left">
+                        
+                                <h2 id="sf-heading-1">Make your money transfer simple and clear</h2>
+                        
+                                <div class="sf2-flexthis">
+                                    <img src="/images/light/icons/icon-l-checkmark-light.svg" alt="checkmark" aria-hidden="true">
+                                    <p>Banking transactions are free for you</p>
+                                </div>
+                        
+                                <div class="sf2-flexthis">
+                                    <img src="/images/light/icons/icon-l-checkmark-light.svg" alt="checkmark" aria-hidden="true">
+                                    <p>No monthly cash commission</p>
+                                </div>
+                        
+                                <div class="sf2-flexthis">
+                                    <img src="/images/light/icons/icon-l-checkmark-light.svg" alt="checkmark" aria-hidden="true">
+                                    <p>Manage payments and transactions online</p>
+                                </div>
+
+                                <button id="fs2-btn-1" class="btn btn-primary sf-direction">
+                                    <label for="fs2-btn-1">Learn more </label>
+                                    <i class="fa-solid fa-arrow-right icon"></i>
+                                </button>
+
+                            </div>
+                        
+                            <div class="sf-image-box-right">
+                                
+                                <div class="right-img-back">
+                                    <img class="sf2-1" src="/images/desktop/f2-1-back.svg" loading="lazy" alt="economic forecast">
+                                </div>
+                                
+                                <div class="right-img-front">
+                                    <img class="sf2-2" src="/images/desktop/f2-1-front.svg" loading="lazy" alt="send money to"  class="image-override">
+                                </div>
+                        
+                            </div>
+
+                        </div>
+                        
+                        <div class="sf-lower-box">
+                        
+                            <div class="sf-image-box-left">
+                                
+                                <div class="left-img-back">
+                                    <img class="sf2-3" src="/images/desktop/f2-2-back.svg" loading="lazy" alt="contacts">
+                                </div>
+                                
+                                <div class="left-img-front">
+                                    <img class="sf2-4"  src="/images/desktop/f2-2-front.svg" loading="lazy" alt="visa card">
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="text-cluster-right">
+                                
+                                <h2 id="sf-heading-2"> Receive payment from international bank details</h2>
+                                
+                                <div class="text-box-right">
+
+                                    <div class="sf-left-bunch">
+                                        <div class="sf2-img-container">
+                                            <img src="/images/mobile+/payments.svg" alt="payment icon">
+                                        </div>
+                                        <p>Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
+                                    </div>
+
+                                    <div class="sf-right-bunch">
+                                        <div class="sf2-img-container">
+                                            <img src="/images/mobile+/cashback.svg" alt="wallet icon">
+                                        </div>
+                                        <p>A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris.</p>
+                                    </div>
+
+                                </div>
+
+                                <button id="fs2-btn-2" class="btn btn-primary sf-direction">
+                                    <label for="fs2-btn-2">Learn more</label>
+                                    <i class="fa-solid fa-arrow-right icon"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+            <!-- #################################################################################################### -->
+            <!-- #################################################################################################### -->
+                                <!-- ██████╗ ███████╗██╗   ██╗██╗███████╗██╗    ██╗███████╗ -->
+                                <!-- ██╔══██╗██╔════╝██║   ██║██║██╔════╝██║    ██║██╔════╝ -->
+                                <!-- ██████╔╝█████╗  ██║   ██║██║█████╗  ██║ █╗ ██║███████╗ -->
+                                <!-- ██╔══██╗██╔══╝  ╚██╗ ██╔╝██║██╔══╝  ██║███╗██║╚════██║ -->
+                                <!-- ██║  ██║███████╗ ╚████╔╝ ██║███████╗╚███╔███╔╝███████║ -->
+                                <!-- ╚═╝  ╚═╝╚══════╝  ╚═══╝  ╚═╝╚══════╝ ╚══╝╚══╝ ╚══════╝ -->
+            <!-- #################################################################################################### -->
+            <!-- #################################################################################################### -->
+
+
+
+            <section id="testimonial-section" aria-label="Testimonails section">
+                <div class="container">
+                    <div class="testimonials-box">
+                        <h2>Clients are <br/>Loving Our App</h2>
+                        <div class="reviews">
+                            <div class="review-box">
+                                <img class="quote-icon" src="/images/light/icons/icon-l-quote-light.svg" alt="quote icon" >
+                                <div class="quote-box">
+                                    <img class="review-rating" src="/images/light/icons/icon-l-rating4-light.svg" alt="four out of five star rating">
+                                    <p>Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis. Laoreet posuere rhoncus, egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. Montes justo turpis sit amet.</p>
+                                    <div class="review-info">
+                                        <img class="reviewer-avatar" src="/images/light/avatars/woman.svg" alt="female avatar">
+                                        <div class="reviewer">
+                                            <h3>Fannie Summers</h3>
+                                            <p>Designer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-box">
+                                <img class="quote-icon" src="/images/light/icons/icon-l-quote-light.svg" alt="quote icon" >
+                                <div class="quote-box">
+                                    <img class="review-rating" src="/images/light/icons/icon-l-rating5-light.svg" alt="five out of five star rating">
+                                    <p>Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin amet porttitor. Nisl bibendum nulla tincidunt eu enim ornare dictumst sit amet. Dictum pretium dolor tincidunt egestas eget nunc.</p>
+                                    <div class="review-info">
+                                        <img class="reviewer-avatar" src="/images/light/avatars/man.svg" alt="male avatar">
+                                        <div class="reviewer">
+                                            <h3>Albert Flores</h3>
+                                            <p>Developer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+            <!-- #################################################################################################### -->
+            <!-- #################################################################################################### -->
+                                            <!-- ███████╗ █████╗  ██████╗  -->
+                                            <!-- ██╔════╝██╔══██╗██╔═══██╗ -->
+                                            <!-- █████╗  ███████║██║   ██║ -->
+                                            <!-- ██╔══╝  ██╔══██║██║▄▄ ██║ -->
+                                            <!-- ██║     ██║  ██║╚██████╔╝ -->
+                                            <!-- ╚═╝     ╚═╝  ╚═╝ ╚══▀▀═╝  -->
+            <!-- #################################################################################################### -->
+            <!-- #################################################################################################### -->
+
+            
+            <!-- <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion">Accordian</a> -->
+            <section id="faq-section" aria-label="Frequently asked questions">
+                
+                    <div class="container faq-container">
+
+                        <div class="faq-heading-field">
+
+                            <div class="faq-heading-text">
+                                <h2>Any questions? Check out the FAQs</h2>
+                                <p>Still have unanswered questions and need to get in touch?</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-accordion-box">
+                            <div class="box-box">
+                                <button id="a1" class="faq-accordion">
+                                    <label class="a1" for="a1">Is any of my personal information stored in the app?</label>
+                                    <i class="fa-solid fa-chevron-down icon-down"></i>
+                                </button>
+                                <div class="container faq-panel">
+                                    <p>Nunc duis id aenean gravida tincidunt eu, tempor
+                                        ullamcorper. Viverra aliquam arcu, viverra et,
+                                        cursus. Aliquet pretium cursus adipiscing gravida
+                                        et consequat lobortis arcu velit. Nibh pharetra
+                                        fermentum duis accumsan lectus non. Massa
+                                        cursus molestie lorem scelerisque pellentesque.
+                                        Nisi, enim, arcu purus gravida adipiscing euismod
+                                        montes, duis egestas. Vehicula eu etiam quam
+                                        tristique tincidunt suspendisse ut consequat.
+                                        
+                                        <br/><br/>Ornare senectus fusce dignissim ut. Integer
+                                        consequat in eu tortor, faucibus et lacinia
+                                        posuere. Turpis sit viverra lorem suspendisse
+                                        lacus aliquam auctor vulputate. Quis egestas
+                                        aliquam nunc purus lacus, elit leo elit facilisi.
+                                        Dignissim amet adipiscing massa integer.</p>
+                                </div>
+                            </div>
+                        
+                            <div class="box-box">
+                                <button id="a2" class="faq-accordion">
+                                    <label class="a2" for="a2">What formats can I download my transaction history in?</label>
+                                    <i class="fa-solid fa-chevron-down icon-down"></i>
+                                </button>
+                                <div class="container faq-panel">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, culpa odio velit laborum in officiis vel, dicta impedit ea iusto sint aut id nemo itaque facere perferendis eius eligendi saepe quibusdam nostrum? Dolorum modi maxime quos reiciendis minima pariatur eum, neque assumenda quisquam aspernatur, veritatis veniam amet in ipsam culpa inventore. Officiis laborum voluptatibus laudantium minima, nihil iusto totam animi voluptas eveniet, aliquid quos quas autem nam quis praesentium exercitationem vitae quasi commodi odit quae velit ab recusandae ea dolor! Dignissimos eius cupiditate, sit velit hic sequi vitae iusto cum autem doloribus ex eveniet nihil molestias earum? Maiores quae facere accusamus unde at quam odit nostrum iste harum numquam voluptates, accusantium deleniti ducimus eligendi nisi reiciendis, dignissimos debitis. Aut culpa voluptatibus iste saepe? Sequi nisi ipsum enim? Placeat reprehenderit asperiores dicta. Est unde ex saepe necessitatibus non sint ad delectus magnam voluptates sequi sapiente animi dolorum praesentium culpa adipisci, quo quis dolore id. Molestiae, dolorum. Earum velit dicta reiciendis officia? Rem, velit perferendis exercitationem placeat fugit soluta corrupti odio at debitis nulla quam saepe atque cupiditate, distinctio ipsam quis quod optio nobis animi consequuntur nam sapiente labore? Cumque illo earum facere voluptate saepe dignissimos eveniet quo velit. Eaque laudantium dolore, beatae, modi repellendus autem aliquid quibusdam nesciunt, voluptates corporis vero sunt suscipit ea soluta placeat accusamus quidem eos! Voluptatem magni quam deserunt aut, ab, hic quibusdam quos praesentium doloremque odio explicabo eius quis nobis. Quae magnam cum odio, sint eveniet fugit autem cumque blanditiis eligendi minima. Corporis praesentium totam saepe aliquid ipsam nemo aut illo natus voluptatum earum aliquam necessitatibus perferendis beatae perspiciatis asperiores dolore, nobis repellat ut unde harum porro magnam ipsa. Sed, doloribus.</p>
+                                </div>
+                            </div>
+                        
+                            <div class="box-box">
+                                <button id="a3" class="faq-accordion">
+                                    <label class="a3" for="a3">Can I schedule future transfers?</label>
+                                    <i class="fa-solid fa-chevron-down icon-down"></i>
+                                </button>
+                                <div class="container faq-panel">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dignissimos reiciendis fugit alias perferendis voluptates vitae pariatur. Magni totam laudantium aspernatur similique eaque quis nesciunt, aut, voluptatum, laborum vero ducimus qui nobis eius. Ducimus repellendus commodi nostrum quaerat, unde beatae cumque expedita quos libero sequi iste totam aspernatur neque aliquam rerum officiis laboriosam laudantium numquam vero perspiciatis mollitia! Tempora facilis cum, consectetur, asperiores et corrupti modi dignissimos ab voluptate delectus consequuntur iure quam sed.</p>
+                                </div>
+                            </div>
+
+                            <div class="box-box">
+                                <button id="a4" class="faq-accordion">
+                                    <label class="a4" for="a4">When can I use Banking App services?</label>
+                                    <i class="fa-solid fa-chevron-down icon-down"></i>
+                                </button>
+                                <div class="container faq-panel">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, repellat dicta alias unde quisquam minus voluptates rerum temporibus assumenda laboriosam, voluptas officiis consequuntur cum distinctio qui culpa sed maiores dolorem expedita laudantium minima tempore? Eaque enim numquam facilis ad iure. Similique laboriosam deserunt praesentium? Sed, assumenda unde! Nihil cumque laboriosam tempora optio laborum placeat natus sunt delectus officia, ratione ab doloremque! Quo ipsam provident libero assumenda fuga mollitia possimus voluptas porro explicabo soluta sed expedita culpa dicta, dignissimos, veniam consequatur quibusdam molestias vero minima quos ratione eos consectetur qui. Adipisci quibusdam tenetur neque mollitia, esse consectetur, exercitationem sint repudiandae consequatur maiores, tempore cum? Ex harum temporibus nam, odio amet illum id nobis reiciendis natus numquam omnis. Nisi vel eaque dicta laboriosam officiis eius dolor earum, labore aperiam id non a soluta mollitia nostrum.</p>
+                                </div>
+                            </div>
+                        
+                            <div class="box-box">
+                                <button id="a5" class="faq-accordion">
+                                    <label class="a5" for="a5">Can I create my own password that is easy for me to remember?</label>
+                                    <i class="fa-solid fa-chevron-down icon-down"></i>
+                                </button>
+                                <div class="container faq-panel">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quis? Quia, corrupti inventore enim aperiam suscipit, totam incidunt sed eum, quaerat maxime harum deleniti distinctio explicabo numquam quo pariatur voluptas impedit tenetur fugit tempore sequi eligendi ducimus omnis. Ullam, porro adipisci veritatis impedit at repellendus ipsa. Quis accusantium magni itaque provident nobis error ipsa tempora vitae ullam sunt exercitationem ipsum nesciunt quod minima rerum, aperiam eveniet hic!</p>
+                                </div>
+                            </div>
+                        
+                            <div class="box-box">
+                                <button id="a6" class="faq-accordion">
+                                    <label class="a6" for="a6">What happens if I forget or lose my password?</label>
+                                    <i class="fa-solid fa-chevron-down icon-down"></i>
+                                </button>
+                                <div class="container faq-panel">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, eaque consequatur, fugit quaerat voluptates ab sunt reprehenderit iure iusto nulla quas ipsum fugiat sed temporibus error aliquam doloribus, ratione architecto debitis veniam omnis quod. Corporis consequatur beatae temporibus architecto autem maiores ipsum commodi! Aliquid quo atque architecto, harum culpa voluptatem ratione temporibus eligendi porro fuga exercitationem facere ad quod consequuntur dolorum est autem impedit pariatur ipsam minima a officia quasi. Eligendi ipsa vitae fugiat consectetur in facere dolore delectus ab eveniet quam, quod et a reprehenderit laudantium natus eius harum. At, nostrum harum sit accusantium perspiciatis aliquam officiis commodi quo qui ipsam fugiat quidem expedita, sequi doloremque. Necessitatibus ut enim, earum hic illum dignissimos aperiam, placeat quibusdam neque perferendis repellat similique ullam consequatur sed iure quia quod architecto laudantium consectetur incidunt mollitia, expedita maiores id non! Quae, sed corrupti mollitia aspernatur, repellat odio officiis cumque saepe dolores harum error maiores! Inventore necessitatibus enim vero dolorum architecto quidem nam maiores ullam, distinctio, deleniti facere dignissimos quisquam rem perferendis suscipit fugiat, fuga officia. Adipisci nostrum culpa et. Dolore ipsum quisquam perspiciatis alias commodi totam ad nihil exercitationem ipsa in fugiat cupiditate soluta praesentium, aspernatur atque! Nostrum voluptatum porro ipsa dolores animi. Porro hic nostrum, eligendi excepturi eum nulla? Nihil porro maiores eos quod harum illum blanditiis, deserunt quibusdam vero sunt eligendi architecto. Quaerat perferendis repellat impedit quo officia provident beatae? Repellat tempore eius sequi excepturi vitae neque architecto consequatur officiis quam quibusdam. Recusandae veritatis veniam pariatur vel, neque saepe omnis cum aliquam laborum similique nesciunt modi dolorum sint tempore necessitatibus repudiandae cumque accusantium quasi hic porro consectetur magni doloribus? A, dolores quae. Eos tenetur illo, ducimus sint facere ullam voluptatum? Reiciendis reprehenderit ea maiores commodi corrupti corporis rerum quaerat consectetur perferendis, suscipit quam, delectus voluptate ipsam necessitatibus exercitationem asperiores unde enim, recusandae id! Molestias similique recusandae corrupti tempora voluptatum illum placeat architecto dicta iusto, temporibus labore dolorum neque dolore animi et ipsam sed quos voluptate nemo autem amet! Accusantium tenetur dolores voluptates sunt aliquid. Harum deleniti doloremque tempora officia ad, debitis iure perspiciatis, eius architecto quidem distinctio reiciendis nihil expedita minus laborum eaque animi ab temporibus quae id! Porro.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-m-contact">
+                            <button id="m-contact-btn" class="btn btn-primary" aria-label="contact us now">
+                                <label for="m-contact-btn">Contact us now</label>
+                            </button>
+                        </div>
+
+                        <div class="faq-t-contact">
+                            <button id="call-us" class="call-us tplus-style" aria-label="call us">
+                                <img src="/images/light/icons/icon-l-phone-light.svg" alt="phone icon">
+                                <p>Still have questions?</p>
+                                <div class="call-us-flex contact-us">
+                                    <label for="call-us">Contact us</label>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </button>
+                            <button id="message-us" class="message-us tplus-style" aria-label="message us">
+                                <img src="/images/light/icons/icon-l-bubble-light.svg" alt="phone icon">
+                                <p>Still have questions?</p>
+                                <div class="message-us-flex contact-us">
+                                    <label for="message-us">Contact us</label>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </button>
+                        </div>
+
+                    </div>
+
+            </section>
+
+
+
+            <!-- #################################################################################################### -->
+            <!-- #################################################################################################### -->
+                            <!-- ███████╗██╗   ██╗██████╗ ███████╗ ██████╗██████╗ ██╗██████╗ ███████╗ -->
+                            <!-- ██╔════╝██║   ██║██╔══██╗██╔════╝██╔════╝██╔══██╗██║██╔══██╗██╔════╝ -->
+                            <!-- ███████╗██║   ██║██████╔╝███████╗██║     ██████╔╝██║██████╔╝█████╗   --> 
+                            <!-- ╚════██║██║   ██║██╔══██╗╚════██║██║     ██╔══██╗██║██╔══██╗██╔══╝   -->  
+                            <!-- ███████║╚██████╔╝██████╔╝███████║╚██████╗██║  ██║██║██████╔╝███████╗ -->
+                            <!-- ╚══════╝ ╚═════╝ ╚═════╝ ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═════╝ ╚══════╝ -->
+            <!-- #################################################################################################### -->
+            <!-- #################################################################################################### -->
+
+
+
+            <!-- Before watching the Tips & Trix video! -->
+            <section id="subscribe-section"  aria-label="subscribe section">
+
+                <div class="container  center">
+
+                    <div class="sub-box">
+                        
+                        <div class="sub-info-box">
+                            <img id="sub-image" src="./images/mobile+/notification.svg" alt="image 'notification'">
+                            <h2 id="img-text-md">Subscribe to our newsletter <span id="d-ext">to stay informed about the latest updates.</span></h2>                                    
+                        </div>
+                        
+                        <div class="sub-input-box">
+
+                            <div class="sub-border">
+
+                                <form id="sub-scribe">
+                                    <div class="input-field">
+                                        <img class="icon" src="/images/light/icons/icon-l-mail-light.svg" alt="">
+                                        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values -->
+                                        <input type="email" id="email" class="email" placeholder="Your Email" autocomplete="off">
+                                    </div>
+                                </form>
+                                
+                                <div class="sub-btn">
+                                    <button id="sub-btn" class="btn btn-primary" aria-label="subscribe">
+                                        <label for="sub-btn">Subscribe</label>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+            </section>
+
+        </main>
+
+
+
+        <!-- #################################################################################################### -->
+        <!-- #################################################################################################### -->
+                                <!-- ███████╗ ██████╗  ██████╗ ████████╗███████╗██████╗  --> 
+                                <!-- ██╔════╝██╔═══██╗██╔═══██╗╚══██╔══╝██╔════╝██╔══██╗ -->
+                                <!-- █████╗  ██║   ██║██║   ██║   ██║   █████╗  ██████╔╝ -->
+                                <!-- ██╔══╝  ██║   ██║██║   ██║   ██║   ██╔══╝  ██╔══██╗ -->
+                                <!-- ██║     ╚██████╔╝╚██████╔╝   ██║   ███████╗██║  ██║ -->
+                                <!-- ╚═╝      ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝╚═╝  ╚═╝ -->
+        <!-- #################################################################################################### -->
+        <!-- #################################################################################################### -->
+
+
+        
+        <!-- School Guidance Material Code -->
+        <!-- Footer is recreated from school guidance material (Tips & Trix video) -->
+        <footer id="footer-section" aria-label="Footer / End section">
+
+            <div class="container">
+                <p class="copyright"> © 2024 Silicon. All rights reserved. </p>
+                <p class="credit"> Credit MadrasThemes</p>
+            </div>
+
+        </footer>
+
+    </div>
+    
+
+
+    <!-- #################################################################################################### -->
+    <!-- #################################################################################################### -->
+                            <!-- ███████╗ ██████╗██████╗ ██╗██████╗ ████████╗███████╗ -->
+                            <!-- ██╔════╝██╔════╝██╔══██╗██║██╔══██╗╚══██╔══╝██╔════╝ -->
+                            <!-- ███████╗██║     ██████╔╝██║██████╔╝   ██║   ███████╗ -->
+                            <!-- ╚════██║██║     ██╔══██╗██║██╔═══╝    ██║   ╚════██║ -->
+                            <!-- ███████║╚██████╗██║  ██║██║██║        ██║   ███████║ -->
+                            <!-- ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝        ╚═╝   ╚══════╝ -->
+    <!-- #################################################################################################### -->
+    <!-- #################################################################################################### -->
+
+
+
+
+    <!-- W3schools and then ChatGPT in order to get it implemented -->
+    <!-- Main Javascript -->
+    <script src="/js/main.js"></script> 
+    <!-- Carousel Javascript -->   
+    <script src="/js/carousel-mobile.js"></script>
+    <script src="/js/carousel-t-dt.js"></script>
+    <!-- Acordion -->
+    <script src="/js/accordion.js"></script>
+
+</body>
+</html>
