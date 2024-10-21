@@ -107,33 +107,129 @@
                             <p>»</p>
                             <a href="./contact.html" class="active-link">Contact</a>
                         </div>
-                        <div>
-                            <div class="contact-upper">
-                                <div>
+                        <div class="contact-upper">
+                            <div class="contact-info-upper">
+                                <div class="cards-box">
                                     <h1>Contact us</h1>
                                 
                                     <div class="cards">
                                         <div class="card">
-                                            <img src="./images/light/icons/icon-l-mail-primary-light.svg" alt="icon mail">
-                                            <div>
+                                            <div class="card-btn btn-circle">
+                                                <img src="./images/light/icons/icon-l-mail-primary-light.svg" alt="icon mail">
+                                            </div>
+                                            <div class="card-info">
                                                 <h2>Email us</h2>
                                                 <p>Please feel free to drom us a line. We will respond as soon as possible.</p>
-                                                <a href="#">Leave a message <i class="fa-solid fa-arrow-right"></i></a>
+                                                <div class="semiBold-text">
+                                                    <a href="#">Leave a message <i class="fa-solid fa-arrow-right"></i></a>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="card">
-                                            <img src="./images/light/icons/icon-l-advancement-light.svg" alt="icon group">
-                                            <div>
+                                            <div class="card-btn btn-circle">
+                                                <img src="./images/light/icons/icon-l-advancement-light.svg" alt="icon group">
+                                            </div>
+                                            <div class="card-info">
                                                 <h2>Careers</h2>
                                                 <p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
-                                                <a href="#">Send an application <i class="fa-solid fa-arrow-right"></i></a>
+                                                <div class="semiBold-text">
+                                                    <a href="#">Send an application <i class="fa-solid fa-arrow-right"></i></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <form id="consultation-form" class="consultation-form">
                                     <h2>Get Online Consultation</h2>
+
+                                    <div class="input-group">
+                                        <label for="fullName" class="form-label">Full Name</label>
+                                        <input type="text" id="fullName" class="form-input" required>
+                                        <p class="invalid-input">Error msg.</p>
+                                    </div>
+                                                                        
+                                    <div class="input-group">
+                                        <label for="email" class="form-label">E-mail address</label>
+                                        <input type="email" id="email" class="form-input" required>
+                                        <p class="invalid-input">Error msg.</p>
+                                    </div>
+                                    
+                                    <div class="input-group">
+                                        <label for="specialist" class="form-label">Specialist</label>
+                                        <!-- <input type="dropdown" id="specialist" class="form-input"> -->
+                                         <!-- https://www.youtube.com/watch?v=mmFrE0H0aXQ -->
+                                         <div class="select-box">
+                                            <select name="specialist" id="specialist" class="form-list">
+                                                <option value=""></option>
+                                                <option value="">I don't know</option>
+                                                <option value="">What it's supposed to be here</option>
+                                                <option value="">Tell me.</option>
+                                            </select>
+                                         </div>
+                                        <p class="invalid-input">Error msg.</p>
+                                    </div>
+
+                                    <button id="submit-btn" type="submit" class="btn btn-primary">
+                                        <span id="buttonText">Make an appointment</span>
+                                    </button>
                                 </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="contact-lower">
+                        <div class="map">
+                            <img src="./images/desktop/map.svg" loading="lazy" alt="static map">
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <h2>Medical Center 1</h2>
+                                <div class="card-address">
+                                    <img src="./images/desktop/icon-gps.svg" alt="icon gps">
+                                    <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
+                                </div>
+                                <div class="card-number">
+                                    <img src="./images/desktop/icon-phone-call.svg" alt="icon phone">
+                                    <p>(405) 555-0120</p>
+                                </div>
+                                <div class="card-open">
+                                    <div class="time">
+                                        <img src="./images/desktop/icon-time-five.svg" alt="icon clock">
+                                    </div>
+                                    <div class="weekdays">
+                                        <p><span>Mon-Fri:</span> 9:00-22:00 am</p>
+                                        <p><span>Sat-Sun:</span> 9:00-20:00 am</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h2>Medical Center 2</h2>
+                                <div class="card-address">
+                                    <img src="./images/desktop/icon-gps.svg" alt="icon gps">
+                                    <p>2464 Royal Ln. Mesa, New Jersey 455463</p>
+                                </div>
+                                <div class="card-number">
+                                    <img src="./images/desktop/icon-phone-call.svg" alt="icon phone">
+                                    <p>(406) 544-0123</p>
+                                </div>
+                                <div class="card-open">
+                                    <div class="time">
+                                        <img src="./images/desktop/icon-time-five.svg" alt="icon clock">
+                                    </div>
+                                    <div class="weekdays">
+                                        <p><span>Mon-Fri:</span> 9:00-22:00 am</p>
+                                        <p><span>Sat-Sun:</span> 9:00-20:00 am</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-media-links">
+                                <a class="smaller" href="https://facebook.com" target="_blank" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://x.com" target="_blank" aria-label="x-twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://instagram.com" target="_blank" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://youtube.com" target="_blank" aria-label="youtube"><i class="fa-brands fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
