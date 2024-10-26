@@ -21,6 +21,7 @@
     --color-gradiant-2: #8B5CF6; /* 50% */
     --color-gradiant-3: #D946EF; /* 100% */
     --color-almostblack-blue: #131022; /* Brand Fill */
+    
     /* System & Buttons */
     --color-red: #EF4444; /* Error */
     --color-green: #22C55E; /* Success */
@@ -29,15 +30,18 @@
     --color-black: #000; /* Black Button */
     --color-white: #fff;
     --color-white-dark: rgba(255, 255, 255, 0.04); /* Dark BG */
+    
     /* Text Dark-Mode Transparency */
     --color-tex-wh-o100: rgba(255, 255, 255, 1); /* S, M, L */
     --color-tex-wh-o70: rgba(255, 255, 255, 0.7);
     --color-tex-wh-o5: rgba(255, 255, 255, 0.05);
+    
     /* Text Light-Mode */
     --color-tex-gr-bl: rgb(88, 92, 123);
     --color-tex-bl-bl: rgb(19, 16, 34);
 
     --color-brand-btn: #6366F1; /* Brand, Primary */
+
     /* Logos */
     --color-twitter: #1CA1F2; /* Twitter Blue */
     --color-youtube: #FF0000; /* Youtube Red */
@@ -45,17 +49,6 @@
     --container-padding: 1rem;
     --transition-time: all 0.2s;
 
-    /* Heading Gradient Colours - LIGHT/DARK */ /* Got some help from ChatGPT here (Hex press to hsl didn't work for the background.) */
-    /* --clr-grad-1: 221, 87%, 95%; */ /* HSL values for #F1F4FD */
-    /* --clr-grad-2: 293, 82%, 60%; */ /* HSL values for #DA46EF */
-    /* --clr-grad-3: 238, 80%, 67%; */ /* HSL values for #6366F1 */
-    
-    /* Something similar was found in a bootstrap css file. */
-    /* --linear-gradient: linear-gradient(0deg, 
-    rgba(99,102,241,0.09677419354838712) 0%,
-    rgba(218,70,239,0.06912442396313367) 42%,
-    rgba(241,244,253,0) 83%
-    ); */
 
     --linear-gradient-sc-sec: linear-gradient(355deg, 
     rgba(99,102,241,0.1) 0%, 
@@ -68,8 +61,6 @@
     rgba(241,244,253,0.07) 100%
     );
 
-
-
     /* NAVIGATION BAR COLOURS */
     --navbar-bg-light: rgba(255, 255, 255, 0); /* Semi-transparent white for light mode */
     --navbar-bg-dark: rgba(0, 0, 0, 0); /* Semi-transparent black for dark mode */
@@ -78,5 +69,4 @@
     --navbar-color-light: var(--color-gray-900); /* Text color for light mode */
     --navbar-color-dark: var(--color-white); /* Text color for dark mode */
     --transition-duration: 0.3s; /* Smooth transition duration */
-
 }

@@ -1,8 +1,8 @@
 import './App.css'
-import Header from './sections/Header'
+import Header from './sections/Header/Header'
 
-import Footer from './sections/Footer'
-import Brands from './sections/Brands'
+import Footer from './sections/Footer/Footer'
+import Brands from './sections/Brands/Brands'
 import Features from './sections/Features'
 
 
