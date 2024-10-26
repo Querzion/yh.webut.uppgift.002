@@ -27,14 +27,3 @@ function darkMode() {
         ? "/images/dark/market/googleplay-dark.svg" 
         : "/images/light/market/googleplay-light.svg";
 }
-
-// Change the background color of the navigation bar on scroll
-document.addEventListener('scroll', function () {
-    const header = document.querySelector('.sticky-header');
-    if (window.scrollY > 50) {
-        console.log('Scrolled more than 50px');
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
-    }
-});

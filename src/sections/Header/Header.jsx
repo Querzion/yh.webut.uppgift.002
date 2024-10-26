@@ -8,6 +8,7 @@ const Header = () => {
             <div className="container">
                 <Navbar id="" />
             </div>
+            {/* <Navbar id="" /> */}
             <Showcase />
         </header>
     )

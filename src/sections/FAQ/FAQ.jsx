@@ -5,7 +5,7 @@ import iconBubble from "../../assets/images/mainpage-light/faq/icon-bubble-light
 
 const FAQ = () => {
     return (
-        <section id="faq" aria-label="Frequently asked questions">
+        <section id="faq" className="mt-4" aria-label="Frequently asked questions">
                 
             <div className="faq-container">
 

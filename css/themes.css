@@ -31,71 +31,76 @@
 .dark-mode header .btn-mobile {
   color: var(--color-white);
 }
-.dark-mode #showcase-section #sc-text {
+.dark-mode #showcase #sc-text {
   color: var(--color-tex-wh-o70);
 }
-.dark-mode #showcase-section .btn-download-app {
+.dark-mode #showcase .btn-download-app {
   background-color: var(--color-gray-200);
 }
-.dark-mode #showcase-section .btn-download-app:hover {
+.dark-mode #showcase .btn-download-app:hover {
   background-color: var(--color-gray-500);
 }
-.dark-mode #showcase-section .btn-circle:hover {
+.dark-mode #showcase .btn-circle:hover {
   background-color: var(--color-gray-700);
 }
-.dark-mode #showcase-section .discover-more span {
+.dark-mode #showcase .discover-more span {
   color: var(--color-tex-wh-o70);
   /* color: rgba(255, 255, 255, 0.5); */
 }
 .dark-mode .brand-box {
   background: var(--color-almostblack-blue);
 }
-.dark-mode #app-features-section .af-img-container::before {
+.dark-mode #features .af-img-container::before {
   background-color: rgba(243, 246, 255, 0.05);
 }
-.dark-mode #carousel-section {
+.dark-mode #slider {
   background-color: var(--color-gray-100-dark);
 }
-.dark-mode #app-features-followup-section .sf2-img-container::before {
+.dark-mode #features-followup .sf2-img-container::before {
   background-color: rgba(243, 246, 255, 0.05);
 }
-.dark-mode #testimonial-section {
+.dark-mode #testimonials {
   background-color: var(--color-gray-100-dark);
 }
-.dark-mode #testimonial-section .review-box {
+.dark-mode #testimonials .review-box {
   background-color: var(--color-white-dark);
 }
-.dark-mode #faq-section .a1, .dark-mode #faq-section .a2, .dark-mode #faq-section .a3, .dark-mode #faq-section .a4, .dark-mode #faq-section .a5, .dark-mode #faq-section .a6 {
+.dark-mode #faq .a1, .dark-mode #faq .a2, .dark-mode #faq .a3, .dark-mode #faq .a4, .dark-mode #faq .a5, .dark-mode #faq .a6 {
   color: var(--color-white);
 }
 @media (width < 768px) {
-  .dark-mode #faq-section .faq-accordion-box {
+  .dark-mode #faq .faq-accordion-box {
     border: 0.5px solid var(--color-gray-200-op);
   }
 }
-.dark-mode #faq-section .faq-accordion-box .box-box:active {
+.dark-mode #faq .faq-accordion-box .box-box:active {
   border: 1px solid var(--color-gray-200-op);
 }
-.dark-mode #faq-section .faq-accordion {
+.dark-mode #faq .faq-accordion {
   background-color: var(--color-gray-100-dark);
 }
 @media (width < 768px) {
-  .dark-mode #faq-section .faq-accordion {
+  .dark-mode #faq .faq-accordion {
     background-color: var(--color-almostblack-blue);
     border: 0.5px solid var(--color-gray-200-op);
   }
 }
-.dark-mode #faq-section .faq-accordion + .faq-panel {
+.dark-mode #faq .faq-accordion + .faq-panel {
   background-color: var(--color-gray-100-dark);
 }
 @media (width < 768px) {
-  .dark-mode #faq-section .faq-accordion + .faq-panel {
+  .dark-mode #faq .faq-accordion + .faq-panel {
     background-color: var(--color-almostblack-blue);
     /* border: 0.5px solid var(--color-gray-200-op); */
   }
 }
-.dark-mode #faq-section .faq-accordion .icon-down {
+.dark-mode #faq .faq-accordion .icon-down {
   background-color: hsla(223, 26%, 14%, 0.911);
+  color: var(--color-white);
+}
+.dark-mode #subscribe .sub-box {
+  background-color: var(--color-gray-100-dark);
+}/*# sourceMappingURL=themes.css.map */round-color: hsla(223, 26%, 14%, 0.911);
   color: var(--color-white);
 }
 .dark-mode #subscribe-section .sub-box {
