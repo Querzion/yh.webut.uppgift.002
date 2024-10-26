@@ -1,13 +1,24 @@
-import React from 'react'
+import './App.css'
+import Header from './sections/Header'
 
-const App = () => {
-  return (
-    <div>
+import Footer from './sections/Footer'
+import Brands from './sections/Brands'
+import Features from './sections/Features'
 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptatem corrupti optio placeat necessitatibus ab, corporis rerum aspernatur at provident est reprehenderit reiciendis blanditiis, explicabo expedita nam eaque repellat animi natus ut? Quia earum voluptates, laboriosam accusantium odio nihil doloremque voluptas facere sint maiores quibusdam quidem quis dolore sapiente. Beatae blanditiis molestias odio vel necessitatibus in fugit cupiditate quaerat reprehenderit quos voluptas, eos nihil doloribus facilis porro quidem repellendus laborum deleniti amet nobis vitae officiis. Voluptas laboriosam ipsam, sit culpa animi ducimus. Delectus sed reprehenderit explicabo veniam id fuga! Eaque, beatae neque mollitia ab accusantium commodi corrupti minus nisi, autem fuga consequuntur, explicabo dicta perspiciatis quis earum sint obcaecati dolore ea numquam dignissimos harum ratione! Quas facilis blanditiis expedita? Consequatur explicabo officiis fugiat ullam! Molestias neque delectus reiciendis beatae laborum magni dolores architecto consequatur numquam eos exercitationem nobis inventore voluptatum doloribus nemo quos doloremque, maiores ipsa. Quae, tempora corrupti vero eos sunt ipsum nulla, saepe itaque inventore dolor illo nesciunt eaque illum aut placeat totam omnis voluptate assumenda, sed alias deleniti quam et optio qui? Velit maiores totam consequuntur blanditiis, necessitatibus minima, cum tempora illo deleniti impedit veritatis praesentium hic sapiente, sit illum accusamus. Placeat esse recusandae optio, iste, dignissimos distinctio consectetur nulla quis eos autem dolore enim incidunt magnam architecto aliquid fuga. Autem, fugiat ad sequi esse voluptas ullam, dicta, vel sed minima quas omnis dolorum harum sapiente aspernatur iusto? Obcaecati quas repellat consequatur quod, eos perferendis quisquam natus saepe deleniti, mollitia quos perspiciatis quo, a modi doloremque nihil impedit? Delectus sapiente pariatur odit est amet quia fugit aliquam nesciunt, velit dolorem sint ullam illum ratione nemo. In illo atque eius molestiae saepe esse. Magnam officia ipsa qui, debitis soluta enim, dolore minus maiores ad architecto voluptas odit. Quae, optio nobis! Laborum deleniti perferendis dolorum itaque, repellendus nostrum odit quaerat magnam eos cum cupiditate quia architecto aut dignissimos? Hic animi suscipit debitis recusandae alias ex ipsam dignissimos praesentium facilis sunt exercitationem temporibus obcaecati, excepturi illum similique eligendi mollitia adipisci nulla odit. Placeat pariatur non illo nihil libero veritatis natus. Ducimus minus, eveniet repellat facilis suscipit fugit rem ex quis est dolorum consectetur delectus porro rerum quam iusto impedit, eos provident iste aliquid, fuga aut repudiandae voluptatem atque praesentium. Laboriosam, laudantium maxime nam dolore eveniet praesentium. Enim eligendi excepturi quibusdam fuga facere blanditiis fugit, atque suscipit dolores odit animi totam quia possimus provident rerum reprehenderit neque, pariatur et! Deleniti sapiente ducimus nam harum dolorem, eveniet sit omnis. Obcaecati sunt nostrum repellat reprehenderit facere asperiores commodi eos quisquam beatae et. Impedit, earum cumque odit explicabo accusantium quam debitis reiciendis voluptas beatae quo recusandae ad? Enim obcaecati recusandae eaque ipsa dicta nihil alias facere ullam aliquam sed illo molestiae odit architecto et fugit harum, sequi vitae necessitatibus adipisci perspiciatis libero quam? Possimus inventore quos natus tempora? Ipsum rem omnis porro aut natus assumenda? Eveniet, vero? Tempora aliquam praesentium obcaecati ipsa? Animi vero, in tempora harum a temporibus iure. Quas eaque voluptatem esse non repudiandae debitis maiores. Repudiandae, vel aperiam! Nulla, mollitia at.
-      
-    </div>
-  )
+
+
+function App() {
+
+    return (
+        <>
+            <Header />
+            <Brands />
+            <Features />
+            
+            <Footer /> 
+
+        </>
+    )
 }
 
 export default App

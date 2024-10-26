@@ -1,0 +1,242 @@
+.dark-mode {
+    #contact-section {
+        .contact-bg {
+            background-color: var(--color-gray-100-dark);
+            
+            .contact-upper {
+    
+                .contact-info-upper {
+    
+                    .consultation-form {
+                        background-color: var(--color-gray-900);
+                        box-shadow: 0 0 15px var(--color-gray-800);;
+                        
+                        .btn {
+                            box-shadow: 0 5px 15px var(--color-gray-700);;
+                            
+                        }
+                    }
+                }
+            }
+
+        }
+        
+        .contact-lower {
+
+            .cards {
+
+                .social-media-links {
+
+                    a {
+                        background-color: var(--color-gray-100-dark);
+                        color: var(--color-gray-200);
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+#contact-section {
+    
+    .contact-bg {
+        padding-top: 5rem;
+        background-color: var(--color-gray-200);
+        
+        .link-tree {
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            color: var(--color-gray-600);
+            gap: .5rem;
+            font-size: .8rem;
+            
+            a {
+                color: var(--color-gray-600);
+                text-decoration: none;
+            }
+            
+            .active-link {
+                color: var(--color-primary);
+            }
+        }
+
+        .contact-upper {
+            padding-top: 1rem;
+            padding-bottom: 7rem;
+
+            h1 {
+                font-size: 2.4rem;
+                font-weight: 800;
+            }
+
+            .contact-info-upper {
+                display: grid;
+                position: relative;
+                grid-template-columns: 1fr 1fr;
+
+                .cards-box {
+                    
+                    .cards {
+                        grid-template-columns: 1fr;
+                        
+                        .card {
+                            display: flex;
+                            gap: 1.3rem;
+                            
+                            .card-btn {
+                                height: 60px;
+                                width: 60px;
+                                max-width: 100px;
+                                margin-top: 1.5rem;
+                            }
+
+                            .card-info {
+                                max-width: 50%;
+                                font-size: 1rem;
+                                padding-bottom: 1rem;
+                                
+                                .semiBold-text {
+                                    margin-top: 1.5rem;
+                                    font-weight: 600;
+                                    
+                                    a {
+                                        text-decoration: none;
+                                        color: var(--color-primary);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .consultation-form {
+                    display: grid;
+                    position: absolute;
+                    right: 0;
+                    grid-template-columns: 1fr;
+                    background-color: var(--color-white);
+                    padding: 4rem;
+                    border-radius: 0.5rem;
+                    box-shadow: 0 0 15px var(--color-gray-500);
+                    overflow: hidden;
+                    gap: 1.2rem;
+                    width: 625px;
+                    margin-top: 2rem;
+
+                    h2 {
+                        margin-top: 0;
+                        margin-bottom: 1rem;
+                    }
+
+                    .form-label {
+                        display: block;
+                        margin-bottom: .4rem;
+                    }
+
+                    .form-input, .form-list {
+                        font: inherit;
+                        font-size: 1rem;
+                        width: 100%;
+                        padding: .6em;
+                        border-radius: .5em;
+                        border: 2px solid var(--color-gray-200);   
+                    }
+                
+                    .form-list {
+                        cursor: pointer;
+                    }
+
+
+                    .invalid-input {
+                        color: #ff725a;
+                        font-size: .9rem;
+                        display: none;
+                    }
+                    
+                    .errol {
+                        
+                        .form-input {
+                            border: 2px dotted;
+                            border-color: #ff725a;
+                        }
+                        
+                        .invalid-input {
+                            display: block;
+                        }
+                    }
+
+                    .btn {
+                        border: none;
+                        width: 100%;
+                        padding: 1rem;
+                        margin-top: 7rem;
+                        font-weight: 600;
+                        font-size: 1rem;
+                        box-shadow: 0 5px 15px var(--color-gray-500);
+                    }
+                }
+            }
+        }
+    }
+    
+    .contact-lower {
+        margin-top: 14rem;
+        margin-bottom: 30rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        .map {
+
+            img {
+                border-radius: .5rem;
+                width: 100%;
+            }
+        }
+
+        .cards {
+            margin-left: 10rem;
+            
+            .card {
+                font-size: 1rem;
+    
+
+                .card-address, .card-number, .card-open {
+                    display: flex;
+                    gap: .5rem;
+                    padding-bottom: .8rem;
+
+                    span {
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .social-media-links {
+                display: flex;
+                font-size: .8rem;
+                gap: .5rem;
+                margin-top: 6rem;
+                
+                
+                a {
+                    color: var(--color-gray-800);
+                    background-color: var(--color-gray-100);
+                    padding: .8rem 1rem;
+                    border-radius: .3rem;
+                }
+                
+                .smaller {
+                    font-size: .75rem;
+                    
+                }
+            }
+        }
+        
+    }
+    
+    @media (width < 1400px) {
+        display: none;
+    }
+}
