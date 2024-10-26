@@ -1,4 +1,4 @@
-import './App.css'
+// import './App.css'
 import Header from './sections/Header/Header'
 
 import Footer from './sections/Footer/Footer'
@@ -8,21 +8,30 @@ import FAQ from './sections/FAQ/FAQ'
 import Subscribe from './sections/Subscribe/Subscribe'
 import Features from './sections/Features/Features'
 
+import './assets/scss/main.scss';
+import './assets/scss/themes/themes.scss';
 
 
 function App() {
 
     return (
         <>
+            
             <Header />
-            <main>
-                <Brands />
-                <Features />
-                <Testimonials />
+            
+            <div className="container">
+                <Brands id="brands" />
+            </div>
+
+            <Features />
+            <Testimonials />
+            
+            <div className="container">
                 <FAQ />
                 <Subscribe />
-            </main>
-            <Footer /> 
+                <Footer />
+            </div>
+            
         </>
     )
 }

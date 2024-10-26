@@ -7,237 +7,234 @@
 ╚═╝  ╚═══╝╚═╝  ╚═╝  ╚═══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ */
 
 /* Partly taken from School Guidance Material & ChatGPT */
-#navbar-section {
-    .container {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        grid-template-columns: 1fr auto auto;
-        padding: 1rem;
-        gap: 1.5em;
-        
-        @media (min-width: 768px) {
-            gap: 3rem;
-            
-            @media (min-width: 1400px) {
-                grid-template-columns: auto 1fr auto auto;
-            }
-        } 
-    }     
-}
-
-
-/* ############################################################################################ */
-                                /* NAVBAR FUNCTIONALITY SETTINGS */
-/* ############################################################################################ */
-
-/* Start with the header being fully transparent */
-/* MEMO: -webkit-sticky is for Safari */
-.sticky-header {
-    position: -webkit-sticky; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-height: 80px;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
-    transition: background-color 0.5s ease;
-    z-index: 1000; 
-}
-
-/* When scrolled, make the header fully opaque in light mode */
-.sticky-header.scrolled {
-    background: var(--color-white); 
-}
-
-
-/* ############################################################################################ */
-                                /* HAMBURGER MENU SETTINGS */
-/* ############################################################################################ */
-
-/* MEMO: While the earlier button settings focused on the bigger picture, this one focus on the hamburger menu. */
-.btn-mobile {
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-    /* padding-top: .25rem; */
-    
-    @media (min-width: 1400px) {
-        display: none;
-    }
-}
-
-
-/* ############################################################################################ */
-                                /* TEXT DARK-MODE SETTINGS */
-/* ############################################################################################ */
-
-/* This part handles the toggle button, for dark/light mode. */
-/* MEMO: .Label - Dark Mode Text Show/Hide */
-.btn-toggle-switch {
-    display: flex;
-    align-items: center;
+#navbar {
+    display: grid;
     justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr auto auto;
+    padding: 1rem 0;
+    gap: 1.5em;
     
-    gap: 15px;
-    
-    &>.label {
-        display: none;
-        font-weight: 700;  
+    @media (min-width: 768px) {
+        gap: 3rem;
+        
+        @media (min-width: 1400px) {
+            grid-template-columns: auto 1fr auto auto;
+        }
+    } 
 
-        @media (min-width: 768px) {
+    /* ############################################################################################ */
+                                    /* NAVBAR FUNCTIONALITY SETTINGS */
+    /* ############################################################################################ */
+
+    /* Start with the header being fully transparent */
+    /* MEMO: -webkit-sticky is for Safari */
+    .sticky-header {
+        position: -webkit-sticky; 
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-height: 80px;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        transition: background-color 0.5s ease;
+        z-index: 1000; 
+    }
+
+    /* When scrolled, make the header fully opaque in light mode */
+    .sticky-header.scrolled {
+        background: var(--color-white); 
+    }
+
+
+    /* ############################################################################################ */
+                                    /* HAMBURGER MENU SETTINGS */
+    /* ############################################################################################ */
+
+    /* MEMO: While the earlier button settings focused on the bigger picture, this one focus on the hamburger menu. */
+    .btn-mobile {
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        /* padding-top: .25rem; */
+        
+        @media (min-width: 1400px) {
+            display: none;
+        }
+    }
+
+
+    /* ############################################################################################ */
+                                    /* TEXT DARK-MODE SETTINGS */
+    /* ############################################################################################ */
+
+    /* This part handles the toggle button, for dark/light mode. */
+    /* MEMO: .Label - Dark Mode Text Show/Hide */
+    .btn-toggle-switch {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        gap: 15px;
+        
+        &>.label {
+            display: none;
+            font-weight: 700;  
+
+            @media (min-width: 768px) {
+                display: block;
+            }
+        }
+    }
+
+
+    /* ############################################################################################ */
+                                    /* NAVBAR MENU SETTINGS */
+    /* ############################################################################################ */
+
+    /* MEMO: Menu Alternatives Show/Hide */ /* Menu option Show/Hide */
+    .navbar {
+        display: none;
+        
+        @media (min-width: 1400px) {
+            display: flex;
+            align-content: center;
+            margin-top: .1rem;
+            gap: 2rem;
+        }  
+    }
+
+    .nav-link {
+        color: var(--color-gray-900);
+        font-weight: 600;
+        text-decoration: none;
+        
+        &:hover {
+            color: var(--color-primary);
+            
+            &.active {
+                color: var(--color-primary);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    /* ############################################################################################ */
+                                    /* SIGN UP/IN BUTTON SETTINGS */
+    /* ############################################################################################ */
+
+    /* MEMO: Sign in / up button Show/Hide */
+    #auth-signin-create {
+        display: none;
+
+        @media (min-width: 1400px) {
             display: block;
         }
     }
-}
 
 
-/* ############################################################################################ */
-                                /* NAVBAR MENU SETTINGS */
-/* ############################################################################################ */
-
-/* MEMO: Menu Alternatives Show/Hide */ /* Menu option Show/Hide */
-.navbar {
-    display: none;
-    
-    @media (min-width: 1400px) {
-        display: flex;
-        align-content: center;
-        margin-top: .1rem;
-        gap: 2rem;
-    }  
-}
-
-.nav-link {
-    color: var(--color-gray-900);
-    font-weight: 600;
-    text-decoration: none;
-    
-    &:hover {
-        color: var(--color-primary);
-        
-        &.active {
-            color: var(--color-primary);
-            text-decoration: underline;
-        }
-    }
-}
-
-/* ############################################################################################ */
-                                /* SIGN UP/IN BUTTON SETTINGS */
-/* ############################################################################################ */
-
-/* MEMO: Sign in / up button Show/Hide */
-#auth-signin-create {
-    display: none;
-
-    @media (min-width: 1400px) {
-        display: block;
-    }
-}
-
-
-/* ############################################################################################ */
-                                /* LOGOTYPE & TEXT SETTINGS */
-/* ############################################################################################ */
-
-#logo {
-    display: flex;
-    position: relative;
-    align-items: center;
-    gap: 2rem;
-    left: .3rem;
-    max-width: 150px;
-
-    #logo-img {
-        transform: scale(1.4);
-    }
-    
-    #logo-text {
-        margin-right: 1.5rem;
-        transform: scale(1.3);
-    }
-}
-
-@media (min-width: 768px) {
+    /* ############################################################################################ */
+                                    /* LOGOTYPE & TEXT SETTINGS */
+    /* ############################################################################################ */
 
     #logo {
-        gap: 1rem;
-        left: 1rem;
-    
+        display: flex;
+        position: relative;
+        align-items: center;
+        gap: 2rem;
+        left: .3rem;
+        max-width: 150px;
+
         #logo-img {
-            transform: scale(1.2);
+            transform: scale(1.4);
         }
         
         #logo-text {
-            margin-left: .5rem;
             margin-right: 1.5rem;
-            transform: scale(1.1);
+            transform: scale(1.3);
         }
     }
-    
-    @media (min-width: 1400px) {
 
+    @media (min-width: 768px) {
+
+        #logo {
+            gap: 1rem;
+            left: 1rem;
+        
+            #logo-img {
+                transform: scale(1.2);
+            }
+            
+            #logo-text {
+                margin-left: .5rem;
+                margin-right: 1.5rem;
+                transform: scale(1.1);
+            }
+        }
+        
+        @media (min-width: 1400px) {
+
+        }
     }
-}
 
-/* ############################################################################################ */
-                                /* CHECKMARK / TOGGLE SETTINGS */
-/* ############################################################################################ */
+    /* ############################################################################################ */
+                                    /* CHECKMARK / TOGGLE SETTINGS */
+    /* ############################################################################################ */
 
-.toggle-switch {
-    position: relative;
-    display: inline-block;
-    width: 45px;
-    height: 25px;
-}
+    .toggle-switch {
+        position: relative;
+        display: inline-block;
+        width: 45px;
+        height: 25px;
+    }
 
-.toggle-switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
+    .toggle-switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
 
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--color-gray-600);
-    transition: 0.4s;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--color-gray-600);
+        transition: 0.4s;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
 
-.slider::before {
-    position: absolute;
-    content: "";
-    height: 20px;
-    width: 20px;
-    left: 3px;
-    bottom: 2.5px;
-    background-color: var(--color-white);
-    transition: all 0.2s ease;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
+    .slider::before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 3px;
+        bottom: 2.5px;
+        background-color: var(--color-white);
+        transition: all 0.2s ease;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
-/* Rounded slider */
-.slider.round {
-    border-radius: 35px;
-}
-.slider.round::before {
-    border-radius: 50%;
-}
+    /* Rounded slider */
+    .slider.round {
+        border-radius: 35px;
+    }
+    .slider.round::before {
+        border-radius: 50%;
+    }
 
-/* When checked, move the slider knob */
-.toggle-switch input:checked + .slider::before {
-    transform: translateX(18px);
-    background-color: var(--color-white);
-}
+    /* When checked, move the slider knob */
+    .toggle-switch input:checked + .slider::before {
+        transform: translateX(18px);
+        background-color: var(--color-white);
+    }
 
-/* Slider background when checked */
-.toggle-switch input:checked + .slider {
-    background-color: var(--color-primary);
+    /* Slider background when checked */
+    .toggle-switch input:checked + .slider {
+        background-color: var(--color-primary);
+    }
 }

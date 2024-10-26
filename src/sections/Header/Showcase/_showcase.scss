@@ -6,7 +6,8 @@
 ███████║██║  ██║╚██████╔╝╚███╔███╔╝╚██████╗██║  ██║███████║███████╗
 ╚══════╝╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝  ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝ */
 
-#showcase-section {    
+
+#showcase {    
 
     padding-top: 4rem;
     padding-bottom: 2rem;
@@ -16,7 +17,7 @@
         padding-bottom: 0;
         
         @media (min-width: 1400px) {
-            padding-top: 4rem;
+            padding-top: 6rem;
         }
     }
     
@@ -47,19 +48,15 @@
     .sc-headline {
         grid-area: headline;
         text-align: center;
-        font-weight: 800;
-        font-size: 26px;
-        margin-bottom: 1rem;
+        margin-bottom: 4rem;
         
         @media (min-width: 768px) {
-            font-size: 30px;
-            margin-bottom: 4rem;
+            margin-bottom: 6rem;
             
             @media (min-width: 1400px) {
                 text-align: left;
-                font-size: 40px;
                 margin-top: -1rem;
-                margin-bottom: 0;   
+                margin-bottom: 3.5rem;   
             }
         }
     }
@@ -144,10 +141,10 @@
             right: 135px;
             height: auto;
             width: 65%;
-
+            
             @media (min-width: 1400px) {
-                right: 205px;
-                max-height: 80%; 
+                right: 180px;
+                max-height: 85%; 
             }
         }
 
@@ -158,10 +155,13 @@
             right: 0;
             height: auto;
             width: 65%;
-
+            
             @media (min-width: 1400px) {
                 max-height: 100%;
-                
+                width: 100%;
+                right: -9rem;
+                bottom: 1.2rem;
+                transform: scale(1.065);
             }
         }
     }      

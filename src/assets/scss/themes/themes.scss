@@ -43,7 +43,7 @@
     }
 
     
-    #showcase-section {
+    #showcase {
         #sc-text {
             
             color: var(--color-tex-wh-o70);
@@ -68,25 +68,25 @@
     .brand-box {
         background: var(--color-almostblack-blue);
     }
-    #app-features-section {
+    #features {
 
         .af-img-container::before {
             background-color: rgba(243, 246, 255, 0.05);
         }
     }
 
-    #carousel-section {
+    #slider {
         background-color: var(--color-gray-100-dark);
     }
 
-    #app-features-followup-section {
+    #features-followup {
 
         .sf2-img-container::before {
             background-color: rgba(243, 246, 255, 0.05);
         }
     }
 
-    #testimonial-section {
+    #testimonials {
         
         background-color: var(--color-gray-100-dark);
         
@@ -94,7 +94,7 @@
             background-color: var(--color-white-dark);   
         }
     }
-    #faq-section {
+    #faq {
         
         .a1, .a2, .a3, .a4, .a5, .a6 {
             color: var(--color-white);
@@ -133,7 +133,7 @@
         }
     }
 
-    #subscribe-section {
+    #subscribe {
         .sub-box {
             background-color: var(--color-gray-100-dark);
         }

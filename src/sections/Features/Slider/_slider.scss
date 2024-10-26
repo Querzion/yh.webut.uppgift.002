@@ -11,7 +11,7 @@ body {
 }
 
 
-#carousel-section {
+#slider {
     padding-top: 3rem;
     padding-bottom: 4rem;
     background-color: var(--color-gray-100);
@@ -25,17 +25,13 @@ body {
         justify-content: center;
         text-align: center;
         
-        .c-title {
-            font-weight: 800;
-            font-size: 20px;
+        .c-title {            
             margin-bottom: 1rem;
             
             @media (min-width: 768px) {
-                font-size: 26px;
                 margin-bottom: -3.5rem;
                 
                 @media (min-width: 1400px) {
-                    font-size: 30px;
                     margin-bottom: 0;
                 }
             }
@@ -95,10 +91,7 @@ body {
                        
                         grid-area: 2 / 1 / span 1 / span 3;
                         
-                        .carousel-heading {
-                            height: 50px;
-
-                        }
+                        
                         .carousel-text {
                             height: 100px;
                             margin-top: 1rem;

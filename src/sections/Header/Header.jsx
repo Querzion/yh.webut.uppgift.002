@@ -5,7 +5,9 @@ import Showcase from './Showcase/Showcase'
 const Header = () => {
     return (
         <header>
-            <Navbar />
+            <div className="container">
+                <Navbar id="" />
+            </div>
             <Showcase />
         </header>
     )
