@@ -8,35 +8,36 @@ import Brand6 from "/src/assets/images/mainpage-light/brands/brand-6.svg"
 
 
 const Brands = () => {
-  return (
-    <section id="brands">
+    return (
+        <section id="brands">
 
-      <div id="brand-1" className="brand-box">
-          <img src={Brand1} loading="lazy" alt="Brand Logo 1" />
-      </div>
+            <div className="container">
+                <div id="brand-1" className="brand-box">
+                    <img src={Brand1} loading="lazy" alt="Brand Logo 1" />
+                </div>
+                <div id="brand-2" className="brand-box">
+                    <img src={Brand2} loading="lazy" alt="Brand Logo 2" />
+                </div>
+                
+                <div id="brand-3" className="brand-box">
+                    <img src={Brand3} loading="lazy" alt="Brand Logo 3" />
+                </div>
+                
+                <div id="brand-4" className="brand-box">
+                    <img src={Brand4} loading="lazy" alt="Brand Logo 4" />
+                </div>
+                
+                <div id="brand-5" className="brand-box">
+                    <img src={Brand5} loading="lazy" alt="Brand Logo 5" />
+                </div>
+                
+                <div id="brand-6" className="brand-box">
+                    <img src={Brand6} loading="lazy" alt="Brand Logo 6" />
+                </div>
+            </div>
 
-      <div id="brand-2" className="brand-box">
-          <img src={Brand2} loading="lazy" alt="Brand Logo 2" />
-      </div>
-      
-      <div id="brand-3" className="brand-box">
-          <img src={Brand3} loading="lazy" alt="Brand Logo 3" />
-      </div>
-      
-      <div id="brand-4" className="brand-box">
-          <img src={Brand4} loading="lazy" alt="Brand Logo 4" />
-      </div>
-      
-      <div id="brand-5" className="brand-box">
-          <img src={Brand5} loading="lazy" alt="Brand Logo 5" />
-      </div>
-      
-      <div id="brand-6" className="brand-box">
-          <img src={Brand6} loading="lazy" alt="Brand Logo 6" />
-      </div>
-
-    </section>
-  )
+        </section>
+    )
 }
 
 export default Brands

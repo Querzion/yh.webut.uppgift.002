@@ -8,34 +8,36 @@ const Navbar = () => {
     return (
         <section id="navbar" className="sticky-header">
 
-            <a id="logo" href="/index.html">
-                <img 
-                    id="logo-img" 
-                    src={SiliconLogo} 
-                    alt="Silicon Logotype" 
-                />
-                <img 
-                    id="logo-text" 
-                    // src={SiliconLogoTextLight} 
-                    alt="Text Silicon" 
-                />
-            </a>
-            
-            <nav id="main-menu" className="navbar">
-                <a className="nav-link" href="#brands">Features</a>
-                <a className="nav-link" href="./contact.html">Contact</a>
-            </nav>
-            
-            <DarkMode />
-            
-            <a id="auth-signin-create" href="#" className="btn-primary">
-                <i className="fa-regular fa-user" aria-hidden="true"></i>
-                <span>Sign in / up</span>
-            </a>
-            
-            <button className="btn-mobile" title="Menu borked"  aria-label="menu button">
-                <i className="fa-solid fa-bars"></i>
-            </button>
+            <div className="container">
+                <a id="logo" href="/index.html">
+                    <img
+                        id="logo-img"
+                        src={SiliconLogo}
+                        alt="Silicon Logotype"
+                    />
+                    <img
+                        id="logo-text"
+                        // src={SiliconLogoTextLight}
+                        alt="Text Silicon"
+                    />
+                </a>
+                
+                <nav id="main-menu" className="navbar">
+                    <a className="nav-link" href="#brands">Features</a>
+                    <a className="nav-link" href="./contact.html">Contact</a>
+                </nav>
+                
+                <DarkMode />
+                
+                <a id="auth-signin-create" href="#" className="btn-primary">
+                    <i className="fa-regular fa-user" aria-hidden="true"></i>
+                    <span>Sign in / up</span>
+                </a>
+                
+                <button className="btn-mobile" title="Menu borked"  aria-label="menu button">
+                    <i className="fa-solid fa-bars"></i>
+                </button>
+            </div>
         
         </section>
     )

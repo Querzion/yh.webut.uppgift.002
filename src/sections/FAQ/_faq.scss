@@ -140,9 +140,8 @@
     
     .inactive {
         max-height: 0;
-        overflow: hidden;
-        transition: max-height 550ms ease-in-out, opacity 500ms ease-in-out;
         opacity: 0;
+        transition: max-height 230ms ease-in-out, opacity 200ms ease-in-out;
     }
     
     .answer {
@@ -151,8 +150,8 @@
     
     .active {
         max-height: 5000px;
-        transition: max-height 550ms ease-in-out, opacity 700ms ease-in-out;
         opacity: 1;
+        transition: max-height 500ms ease-in-out, opacity 500ms ease-in-out;
     }
 /*                                              
  ██████╗ ██████╗ ███╗   ██╗████████╗ █████╗  ██████╗████████╗

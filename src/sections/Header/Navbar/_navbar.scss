@@ -8,20 +8,25 @@
 
 /* Partly taken from School Guidance Material & ChatGPT */
 #navbar {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr auto auto;
-    padding: 1rem 0;
-    gap: 1.5em;
-    
-    @media (min-width: 768px) {
-        gap: 3rem;
+
+    .container {
+
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr auto auto;
+        padding: 1rem;
+        gap: 1.5em;
         
-        @media (min-width: 1400px) {
-            grid-template-columns: auto 1fr auto auto;
-        }
-    } 
+        @media (min-width: 768px) {
+            padding: 1rem 0;
+            gap: 3rem;
+            
+            @media (min-width: 1400px) {
+                grid-template-columns: auto 1fr auto auto;
+            }
+        } 
+    }
 
     /* ############################################################################################ */
                                     /* NAVBAR FUNCTIONALITY SETTINGS */
@@ -31,7 +36,7 @@
     /* MEMO: -webkit-sticky is for Safari */
     .sticky-header {
         position: -webkit-sticky; 
-        position: sticky;
+        position: relative;
         top: 0;
         left: 0;
         width: 100%;

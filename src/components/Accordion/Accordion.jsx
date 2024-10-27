@@ -1,14 +1,8 @@
-// ChatGPT - Not me creating this one.
+// Accordion.jsx
 
-import React, { useState } from 'react';
+import React from 'react';
 
-const Accordion = ({ question, answer, id }) => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleAccordion = () => {
-        setIsOpen(!isOpen);
-    };
-
+const Accordion = ({ question, answer, id, isOpen, toggleAccordion }) => {
     return (
         <div className="box-box">
             <button id={id} className="faq-accordion" onClick={toggleAccordion}>

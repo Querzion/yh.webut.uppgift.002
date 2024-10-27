@@ -4,8 +4,10 @@ const Footer = () => {
     return (
         <footer id="footer" aria-label="Footer / End section">
 
-                <p className="copyright"> © 2024 Silicon. All rights reserved. </p>
-                <p className="credit"> Credit MadrasThemes</p>
+                <div className="container">
+                    <p className="copyright"> © 2024 Silicon. All rights reserved. </p>
+                    <p className="credit"> Credit MadrasThemes</p>
+                </div>
 
         </footer>
     )

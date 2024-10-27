@@ -7,7 +7,7 @@ const Subscribe = () => {
     return (
         <section id="subscribe"  aria-label="subscribe section">
 
-            <div className="center sub-box">
+            <div className="container center sub-box">
                 
                 <div className="sub-info-box">
                     <img id="sub-image" src={imageNotification} alt="image 'notification'" />
