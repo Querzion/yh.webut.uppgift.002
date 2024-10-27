@@ -66,7 +66,7 @@
 .dark-mode #testimonials .review-box {
   background-color: var(--color-white-dark);
 }
-.dark-mode #faq .a1, .dark-mode #faq .a2, .dark-mode #faq .a3, .dark-mode #faq .a4, .dark-mode #faq .a5, .dark-mode #faq .a6 {
+.dark-mode #faq .question {
   color: var(--color-white);
 }
 @media (width < 768px) {
@@ -95,9 +95,19 @@
     /* border: 0.5px solid var(--color-gray-200-op); */
   }
 }
-.dark-mode #faq .faq-accordion .icon-down {
+.dark-mode #faq .faq-accordion .fa-chevron-down {
   background-color: hsla(223, 26%, 14%, 0.911);
   color: var(--color-white);
+}
+.dark-mode #faq .faq-accordion .fa-chevron-down:hover {
+  background-color: var(--color-almostblack-blue);
+}
+.dark-mode #faq .faq-accordion .fa-chevron-up {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.dark-mode #faq .faq-accordion .fa-chevron-up:hover {
+  background-color: var(--color-almostblack-blue);
 }
 .dark-mode #subscribe .sub-box {
   background-color: var(--color-gray-100-dark);

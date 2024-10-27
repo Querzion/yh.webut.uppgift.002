@@ -101,7 +101,7 @@
     }
     #faq {
         
-        .a1, .a2, .a3, .a4, .a5, .a6 {
+        .question {
             color: var(--color-white);
         }
         
@@ -131,10 +131,23 @@
                 /* border: 0.5px solid var(--color-gray-200-op); */                
             }
         }
-        .faq-accordion .icon-down {
+        .faq-accordion .fa-chevron-down {
             
             background-color: hsla(223, 26%, 14%, 0.911);
             color: var(--color-white);
+
+            &:hover {
+                background-color: var(--color-almostblack-blue);
+            }
+        }
+        .faq-accordion .fa-chevron-up {
+            
+            background-color: var(--color-primary);
+            color: var(--color-white);
+
+            &:hover {
+                background-color: var(--color-almostblack-blue);
+            }
         }
     }
 

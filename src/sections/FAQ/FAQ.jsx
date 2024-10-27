@@ -1,97 +1,55 @@
-import React from 'react'
-
-import iconPhone from "../../assets/images/mainpage-light/faq/icon-phone-light.svg"
-import iconBubble from "../../assets/images/mainpage-light/faq/icon-bubble-light.svg"
+import React from 'react';
+import Accordion from '../../components/Accordion/Accordion'; // Adjust the path as necessary
+import iconPhone from "../../assets/images/mainpage-light/faq/icon-phone-light.svg";
+import iconBubble from "../../assets/images/mainpage-light/faq/icon-bubble-light.svg";
 
 const FAQ = () => {
+    const faqs = [
+        {
+            id: "a1",
+            question: "Is any of my personal information stored in the app?",
+            answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet maxime eaque rerum aliquam nisi incidunt asperiores perferendis quaerat! Cum, ullam vitae iure libero enim aspernatur quo consequatur quaerat necessitatibus molestias deleniti inventore, asperiores eligendi placeat rem cupiditate numquam! Nam ratione illo totam. Incidunt voluptate, nihil eum quod exercitationem odit quia."
+        },
+        {
+            id: "a2",
+            question: "What formats can I download my transaction history in?",
+            answer: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum ipsum eius deserunt odio culpa aperiam inventore nisi! Aliquam consectetur vero perferendis accusantium labore distinctio voluptatem atque enim, iusto doloremque voluptatibus quibusdam fugit quae totam quidem officia dicta expedita qui adipisci vel quisquam. Magnam cumque ullam non porro. Modi nostrum provident quam nobis excepturi, doloribus eaque dolores quidem architecto minus? Cupiditate ipsum a veniam! Quibusdam ea quod earum ratione dolores quis facilis dicta accusantium saepe quidem maxime eveniet, fugit illum impedit enim, sed reprehenderit at alias ullam provident accusamus nihil vero. Nemo neque obcaecati amet aliquam, corrupti est debitis deleniti explicabo numquam id, veritatis distinctio ad doloremque officiis, magnam officia adipisci commodi reiciendis quia vel. Quidem explicabo ducimus perferendis repellat numquam excepturi maxime vel nam ipsam ut. Ullam hic, itaque iste maxime ab numquam ea totam sapiente saepe incidunt aliquid odio nemo quia nisi et quo reiciendis sed eaque consequuntur est voluptatum similique minus sit. Veritatis, quaerat reprehenderit aut recusandae rerum distinctio obcaecati fuga, porro totam laborum nostrum praesentium at illo delectus dolor quod. Repellendus consequuntur, eligendi nobis minima porro eveniet quaerat aliquam molestiae asperiores ex dolorem quod quibusdam corporis voluptatem deserunt ipsa voluptatum voluptates aspernatur ut. Velit asperiores explicabo culpa, in blanditiis cupiditate tenetur accusamus repellat iste temporibus, eos atque eligendi."
+        },
+        {
+            id: "a3",
+            question: "Can I schedule future transfers?",
+            answer: "Harum quam modi, in consectetur dolorum, quaerat ducimus aperiam natus rerum eius ex nihil. Quia eveniet veniam dolorum dolores consectetur placeat, ad totam error quibusdam facere odio, blanditiis adipisci dignissimos voluptatum ipsum commodi officiis harum aspernatur sapiente reprehenderit enim eaque! Tempore molestiae culpa numquam quis reiciendis rerum optio laboriosam similique. Odio explicabo, repellendus culpa dolor fugit, libero reiciendis esse et reprehenderit maxime tempora labore deleniti, in velit asperiores veniam temporibus nostrum rerum voluptate? Provident aperiam et omnis sint asperiores velit saepe neque, error quam magni in vero aspernatur ex culpa. Repudiandae sit suscipit itaque eum illum, debitis error. Iure nobis dolorem reiciendis aperiam culpa ex incidunt magnam, id ad? Error tempora consequatur quaerat incidunt laboriosam nam, sit ut repellendus. Eligendi, magni amet nulla repellendus dolore sint delectus autem libero cupiditate ipsa! Fugit excepturi error debitis placeat, beatae dolores iusto molestias dolore neque, autem, rerum voluptatem id. Velit fugit aperiam culpa minima id vero aut impedit, ipsa ex placeat facere beatae molestias odio, vitae reiciendis nam odit inventore in, nesciunt cumque quo. Non, dolorem ducimus, fugit et nisi veritatis rem atque placeat qui repudiandae modi sequi omnis error nobis exercitationem sit vero nulla excepturi autem natus officia aliquam architecto hic blanditiis! Reprehenderit reiciendis perspiciatis velit facilis odit blanditiis vitae expedita maiores explicabo, atque veritatis iusto nostrum dolores omnis ea, tempora eaque libero ab impedit! Soluta quibusdam saepe, reiciendis dicta omnis voluptatum nulla tenetur provident harum suscipit a optio, sint voluptate facere aut! Necessitatibus autem officia eligendi doloribus obcaecati, saepe ullam quisquam repudiandae unde recusandae ipsum beatae odio maiores nemo deleniti expedita vitae eveniet laborum voluptate sunt cumque veritatis ut. Ea, mollitia magnam dolorem soluta temporibus ab deserunt ullam asperiores odio molestiae, dolorum, accusantium nostrum provident. Quam consequatur laudantium blanditiis unde."
+        },
+        {
+            id: "a4",
+            question: "When can I use Banking App services?",
+            answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+        },
+        {
+            id: "a5",
+            question: "Can I create my own password that is easy for me to remember?",
+            answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+        },
+        {
+            id: "a6",
+            question: "What happens if I forget or lose my password?",
+            answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+        },
+    ];
+
     return (
         <section id="faq" className="mt-4" aria-label="Frequently asked questions">
-                
             <div className="faq-container">
-
                 <div className="faq-heading-field">
-
                     <div className="faq-heading-text">
                         <h2>Any questions? Check out the FAQs</h2>
                         <p>Still have unanswered questions and need to get in touch?</p>
                     </div>
                 </div>
-
                 <div className="faq-accordion-box">
-                    <div className="box-box">
-                        <button id="a1" className="faq-accordion">
-                            <label className="a1" htmlFor="a1">Is any of my personal information stored in the app?</label>
-                            <i className="fa-solid fa-chevron-down icon-down"></i>
-                        </button>
-                        <div className="container faq-panel">
-                            <p>Nunc duis id aenean gravida tincidunt eu, tempor
-                                ullamcorper. Viverra aliquam arcu, viverra et,
-                                cursus. Aliquet pretium cursus adipiscing gravida
-                                et consequat lobortis arcu velit. Nibh pharetra
-                                fermentum duis accumsan lectus non. Massa
-                                cursus molestie lorem scelerisque pellentesque.
-                                Nisi, enim, arcu purus gravida adipiscing euismod
-                                montes, duis egestas. Vehicula eu etiam quam
-                                tristique tincidunt suspendisse ut consequat.
-                                
-                                <br/><br/>Ornare senectus fusce dignissim ut. Integer
-                                consequat in eu tortor, faucibus et lacinia
-                                posuere. Turpis sit viverra lorem suspendisse
-                                lacus aliquam auctor vulputate. Quis egestas
-                                aliquam nunc purus lacus, elit leo elit facilisi.
-                                Dignissim amet adipiscing massa integer.</p>
-                        </div>
-                    </div>
-                
-                    <div className="box-box">
-                        <button id="a2" className="faq-accordion">
-                            <label className="a2" htmlFor="a2">What formats can I download my transaction history in?</label>
-                            <i className="fa-solid fa-chevron-down icon-down"></i>
-                        </button>
-                        <div className="container faq-panel">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, culpa odio velit laborum in officiis vel, dicta impedit ea iusto sint aut id nemo itaque facere perferendis eius eligendi saepe quibusdam nostrum? Dolorum modi maxime quos reiciendis minima pariatur eum, neque assumenda quisquam aspernatur, veritatis veniam amet in ipsam culpa inventore. Officiis laborum voluptatibus laudantium minima, nihil iusto totam animi voluptas eveniet, aliquid quos quas autem nam quis praesentium exercitationem vitae quasi commodi odit quae velit ab recusandae ea dolor! Dignissimos eius cupiditate, sit velit hic sequi vitae iusto cum autem doloribus ex eveniet nihil molestias earum? Maiores quae facere accusamus unde at quam odit nostrum iste harum numquam voluptates, accusantium deleniti ducimus eligendi nisi reiciendis, dignissimos debitis. Aut culpa voluptatibus iste saepe? Sequi nisi ipsum enim? Placeat reprehenderit asperiores dicta. Est unde ex saepe necessitatibus non sint ad delectus magnam voluptates sequi sapiente animi dolorum praesentium culpa adipisci, quo quis dolore id. Molestiae, dolorum. Earum velit dicta reiciendis officia? Rem, velit perferendis exercitationem placeat fugit soluta corrupti odio at debitis nulla quam saepe atque cupiditate, distinctio ipsam quis quod optio nobis animi consequuntur nam sapiente labore? Cumque illo earum facere voluptate saepe dignissimos eveniet quo velit. Eaque laudantium dolore, beatae, modi repellendus autem aliquid quibusdam nesciunt, voluptates corporis vero sunt suscipit ea soluta placeat accusamus quidem eos! Voluptatem magni quam deserunt aut, ab, hic quibusdam quos praesentium doloremque odio explicabo eius quis nobis. Quae magnam cum odio, sint eveniet fugit autem cumque blanditiis eligendi minima. Corporis praesentium totam saepe aliquid ipsam nemo aut illo natus voluptatum earum aliquam necessitatibus perferendis beatae perspiciatis asperiores dolore, nobis repellat ut unde harum porro magnam ipsa. Sed, doloribus.</p>
-                        </div>
-                    </div>
-                
-                    <div className="box-box">
-                        <button id="a3" className="faq-accordion">
-                            <label className="a3" htmlFor="a3">Can I schedule future transfers?</label>
-                            <i className="fa-solid fa-chevron-down icon-down"></i>
-                        </button>
-                        <div className="container faq-panel">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dignissimos reiciendis fugit alias perferendis voluptates vitae pariatur. Magni totam laudantium aspernatur similique eaque quis nesciunt, aut, voluptatum, laborum vero ducimus qui nobis eius. Ducimus repellendus commodi nostrum quaerat, unde beatae cumque expedita quos libero sequi iste totam aspernatur neque aliquam rerum officiis laboriosam laudantium numquam vero perspiciatis mollitia! Tempora facilis cum, consectetur, asperiores et corrupti modi dignissimos ab voluptate delectus consequuntur iure quam sed.</p>
-                        </div>
-                    </div>
-
-                    <div className="box-box">
-                        <button id="a4" className="faq-accordion">
-                            <label className="a4" htmlFor="a4">When can I use Banking App services?</label>
-                            <i className="fa-solid fa-chevron-down icon-down"></i>
-                        </button>
-                        <div className="container faq-panel">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, repellat dicta alias unde quisquam minus voluptates rerum temporibus assumenda laboriosam, voluptas officiis consequuntur cum distinctio qui culpa sed maiores dolorem expedita laudantium minima tempore? Eaque enim numquam facilis ad iure. Similique laboriosam deserunt praesentium? Sed, assumenda unde! Nihil cumque laboriosam tempora optio laborum placeat natus sunt delectus officia, ratione ab doloremque! Quo ipsam provident libero assumenda fuga mollitia possimus voluptas porro explicabo soluta sed expedita culpa dicta, dignissimos, veniam consequatur quibusdam molestias vero minima quos ratione eos consectetur qui. Adipisci quibusdam tenetur neque mollitia, esse consectetur, exercitationem sint repudiandae consequatur maiores, tempore cum? Ex harum temporibus nam, odio amet illum id nobis reiciendis natus numquam omnis. Nisi vel eaque dicta laboriosam officiis eius dolor earum, labore aperiam id non a soluta mollitia nostrum.</p>
-                        </div>
-                    </div>
-                
-                    <div className="box-box">
-                        <button id="a5" className="faq-accordion">
-                            <label className="a5" htmlFor="a5">Can I create my own password that is easy for me to remember?</label>
-                            <i className="fa-solid fa-chevron-down icon-down"></i>
-                        </button>
-                        <div className="container faq-panel">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quis? Quia, corrupti inventore enim aperiam suscipit, totam incidunt sed eum, quaerat maxime harum deleniti distinctio explicabo numquam quo pariatur voluptas impedit tenetur fugit tempore sequi eligendi ducimus omnis. Ullam, porro adipisci veritatis impedit at repellendus ipsa. Quis accusantium magni itaque provident nobis error ipsa tempora vitae ullam sunt exercitationem ipsum nesciunt quod minima rerum, aperiam eveniet hic!</p>
-                        </div>
-                    </div>
-                
-                    <div className="box-box">
-                        <button id="a6" className="faq-accordion">
-                            <label className="a6" htmlFor="a6">What happens if I forget or lose my password?</label>
-                            <i className="fa-solid fa-chevron-down icon-down"></i>
-                        </button>
-                        <div className="container faq-panel">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, eaque consequatur, fugit quaerat voluptates ab sunt reprehenderit iure iusto nulla quas ipsum fugiat sed temporibus error aliquam doloribus, ratione architecto debitis veniam omnis quod. Corporis consequatur beatae temporibus architecto autem maiores ipsum commodi! Aliquid quo atque architecto, harum culpa voluptatem ratione temporibus eligendi porro fuga exercitationem facere ad quod consequuntur dolorum est autem impedit pariatur ipsam minima a officia quasi. Eligendi ipsa vitae fugiat consectetur in facere dolore delectus ab eveniet quam, quod et a reprehenderit laudantium natus eius harum. At, nostrum harum sit accusantium perspiciatis aliquam officiis commodi quo qui ipsam fugiat quidem expedita, sequi doloremque. Necessitatibus ut enim, earum hic illum dignissimos aperiam, placeat quibusdam neque perferendis repellat similique ullam consequatur sed iure quia quod architecto laudantium consectetur incidunt mollitia, expedita maiores id non! Quae, sed corrupti mollitia aspernatur, repellat odio officiis cumque saepe dolores harum error maiores! Inventore necessitatibus enim vero dolorum architecto quidem nam maiores ullam, distinctio, deleniti facere dignissimos quisquam rem perferendis suscipit fugiat, fuga officia. Adipisci nostrum culpa et. Dolore ipsum quisquam perspiciatis alias commodi totam ad nihil exercitationem ipsa in fugiat cupiditate soluta praesentium, aspernatur atque! Nostrum voluptatum porro ipsa dolores animi. Porro hic nostrum, eligendi excepturi eum nulla? Nihil porro maiores eos quod harum illum blanditiis, deserunt quibusdam vero sunt eligendi architecto. Quaerat perferendis repellat impedit quo officia provident beatae? Repellat tempore eius sequi excepturi vitae neque architecto consequatur officiis quam quibusdam. Recusandae veritatis veniam pariatur vel, neque saepe omnis cum aliquam laborum similique nesciunt modi dolorum sint tempore necessitatibus repudiandae cumque accusantium quasi hic porro consectetur magni doloribus? A, dolores quae. Eos tenetur illo, ducimus sint facere ullam voluptatum? Reiciendis reprehenderit ea maiores commodi corrupti corporis rerum quaerat consectetur perferendis, suscipit quam, delectus voluptate ipsam necessitatibus exercitationem asperiores unde enim, recusandae id! Molestias similique recusandae corrupti tempora voluptatum illum placeat architecto dicta iusto, temporibus labore dolorum neque dolore animi et ipsam sed quos voluptate nemo autem amet! Accusantium tenetur dolores voluptates sunt aliquid. Harum deleniti doloremque tempora officia ad, debitis iure perspiciatis, eius architecto quidem distinctio reiciendis nihil expedita minus laborum eaque animi ab temporibus quae id! Porro.</p>
-                        </div>
-                    </div>
+                    {faqs.map(faq => (
+                        <Accordion key={faq.id} id={faq.id} question={faq.question} answer={faq.answer} />
+                    ))}
                 </div>
 
                 <div className="faq-m-contact">
@@ -118,11 +76,9 @@ const FAQ = () => {
                         </div>
                     </button>
                 </div>
-
             </div>
+        </section>
+    );
+};
 
-    </section>
-    )
-}
-
-export default FAQ
+export default FAQ;
