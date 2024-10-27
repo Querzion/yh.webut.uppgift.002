@@ -66,30 +66,6 @@
 
 
     /* ############################################################################################ */
-                                    /* TEXT DARK-MODE SETTINGS */
-    /* ############################################################################################ */
-
-    /* This part handles the toggle button, for dark/light mode. */
-    /* MEMO: .Label - Dark Mode Text Show/Hide */
-    .btn-toggle-switch {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        gap: 15px;
-        
-        &>.label {
-            display: none;
-            font-weight: 700;  
-
-            @media (min-width: 768px) {
-                display: block;
-            }
-        }
-    }
-
-
-    /* ############################################################################################ */
                                     /* NAVBAR MENU SETTINGS */
     /* ############################################################################################ */
 
@@ -178,63 +154,5 @@
         }
     }
 
-    /* ############################################################################################ */
-                                    /* CHECKMARK / TOGGLE SETTINGS */
-    /* ############################################################################################ */
-
-    .toggle-switch {
-        position: relative;
-        display: inline-block;
-        width: 45px;
-        height: 25px;
-    }
-
-    .toggle-switch input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
-
-    .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: var(--color-gray-600);
-        transition: 0.4s;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .slider::before {
-        position: absolute;
-        content: "";
-        height: 20px;
-        width: 20px;
-        left: 3px;
-        bottom: 2.5px;
-        background-color: var(--color-white);
-        transition: all 0.2s ease;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Rounded slider */
-    .slider.round {
-        border-radius: 35px;
-    }
-    .slider.round::before {
-        border-radius: 50%;
-    }
-
-    /* When checked, move the slider knob */
-    .toggle-switch input:checked + .slider::before {
-        transform: translateX(18px);
-        background-color: var(--color-white);
-    }
-
-    /* Slider background when checked */
-    .toggle-switch input:checked + .slider {
-        background-color: var(--color-primary);
-    }
+    
 }
