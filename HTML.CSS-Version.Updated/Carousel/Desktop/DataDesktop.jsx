@@ -1,10 +1,10 @@
 import React from 'react';
 import CarouselContainer from '../CarouselContainer';
 
-import imageBottom from "/src/assets/images/mainpage-light/carousel/desktop-bottom.svg";
-import imageLeft from "/src/assets/images/mainpage-light/carousel/desktop-left.svg";
-import imageMiddle from "/src/assets/images/mainpage-light/carousel/desktop-middle.svg";
-import imageRight from "/src/assets/images/mainpage-light/carousel/desktop-right.svg";
+import imageBottom from "./src/assets/images/mainpage-light/carousel/desktop-bottom.svg";
+import imageLeft from "./src/assets/images/mainpage-light/carousel/desktop-left.svg";
+import imageMiddle from "./src/assets/images/mainpage-light/carousel/desktop-middle.svg";
+import imageRight from "./src/assets/images/mainpage-light/carousel/desktop-right.svg";
 
 
 export const desktopHeadlines = [

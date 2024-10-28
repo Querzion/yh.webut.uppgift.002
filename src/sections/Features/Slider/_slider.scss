@@ -164,12 +164,12 @@ body {
             @media (min-width: 1400px) { display: block;
 
                 /* https://www.w3schools.com/css/css3_masking.asp */
-                .mask {
-                    -webkit-mask-image: url(/images/carousel/desktop/desktop-mask-layer_1.svg);
-                    mask-image: url(/images/carousel/desktop/desktop-mask-layer_1.svg);
-                    /* mask-repeat: repeat-x;
-                    contain: layout; */
-                }
+                // .mask {
+                //     -webkit-mask-image: url(/images/carousel/desktop/desktop-mask-layer_1.svg);
+                //     mask-image: url(/images/carousel/desktop/desktop-mask-layer_1.svg);
+                //     /* mask-repeat: repeat-x;
+                //     contain: layout; */
+                // }
                 
                 .carousel-wrapper {
 

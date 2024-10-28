@@ -1,5 +1,5 @@
 import React from 'react'
-import Carousel from '../../../components/Carousel/CarouselSwitch'
+import Carousel from './Carousel'
 
 const Slider = () => {
     return (
