@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 import imageBottom from "../../../assets/images/mainpage-light/carousel/desktop-bottom.svg";
-
+import imageMask from "../../../assets/images/mainpage-light/carousel/desktop-mask.svg";
 import imageLeft from "../../../assets/images/mainpage-light/carousel/desktop-left.svg";
 import imageMiddle from "../../../assets/images/mainpage-light/carousel/desktop-middle.svg";
 import imageRight from "../../../assets/images/mainpage-light/carousel/desktop-right.svg";
@@ -42,7 +42,7 @@ const CDesktop = () => {
     // Function to get image travel distance (desktop)
     const getImageTravelDistance = () => {
         const viewWidth = window.innerWidth;
-        return viewWidth <= 1399 ? 205 : 300; // Adjust distance based on screen size
+        return viewWidth <= 1399 ? 200 : 421; // Adjust distance based on screen size
     };
 
     // Update text content based on the current index
@@ -120,6 +120,10 @@ const CDesktop = () => {
                                 className="slide-layer"
                                 onClick={() => switchPositions(index)}
                                 ref={el => desktopImagesRef.current[index] = el} // Assigning ref to images
+                                style={{
+                                    WebkitMaskImage: `url(${imageMask})`, // Safari/WebKit support
+                                    maskImage: `url(${imageMask})`,       // Standard support
+                                }}
                             />
                         </div>
                     ))}
@@ -130,7 +134,7 @@ const CDesktop = () => {
                 </div>
 
                 <div className="carousel-text-container">
-                    <h3 className="carousel-heading h5 f600">{desktopHeading}</h3>
+                    <h3 className="carousel-heading mt-1 h5 f600">{desktopHeading}</h3>
                     <p className="carousel-text">{desktopText}</p>
                 </div>
             </div>

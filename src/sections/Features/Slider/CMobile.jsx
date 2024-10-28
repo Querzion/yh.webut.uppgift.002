@@ -104,7 +104,7 @@ const CMobile = () => {
     };
 
     return (
-        <section className="mobile-carousel">
+        <section className="mobile-carousel pb-1">
             <div className="carousel-wrapper">
                 <div className="carousel-grid">
                     <div className="c-layers c-top-layer">
@@ -128,7 +128,7 @@ const CMobile = () => {
                         <img src={mobileBottom} loading="lazy" alt="black" className="outer-layers layer-3" aria-hidden="true" />
                     </div>
                     <div className="mobile-text-container">
-                        <h3 className="h5 f600 carousel-heading">{heading}</h3>
+                        <h3 className="mt-1 mb-1 h5 f600 carousel-heading">{heading}</h3>
                         <p className="carousel-text">{text}</p>
                     </div>
                 </div>

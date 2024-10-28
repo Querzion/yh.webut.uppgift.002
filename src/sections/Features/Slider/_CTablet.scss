@@ -1,0 +1,36 @@
+.tablet-carousel {
+    
+    .carousel-wrapper {
+        overflow: visible;        
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        
+        .slide-box {
+            display: flex;
+            grid-area: 1 / 1;
+            z-index: 1;
+                
+            .slide-layers {
+                cursor: pointer;
+                img {
+                    transition: transform 0.5s ease, z-index 0.5s ease;
+                }
+                    
+                #t-1 { order: 0; }
+                #t-2 { order: 1; }
+                #t-3 { order: 2; }
+            }
+        }
+        
+        .slide-bg { 
+            grid-area: 1 / 1; 
+            transform: scale(0.75); 
+        }
+        
+        .carousel-text-container {
+            margin-top: -3rem;
+            grid-area: 2 / 1 / span 1 / span 1;
+        }
+    } 
+}

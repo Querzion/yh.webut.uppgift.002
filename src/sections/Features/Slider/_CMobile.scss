@@ -1,0 +1,60 @@
+.mobile-carousel { 
+    display: block; 
+            
+    .carousel-wrapper {
+        max-width: 600px;
+        overflow: hidden;
+        
+        .carousel-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            max-width: 100%;
+            
+            .c-top-layer {
+                opacity: 1;
+                position: relative;
+                grid-area: 1 / 1 / span 1 / span 1;
+            }
+            
+            #c-slide-layer {
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                opacity: 1;
+                position: relative;
+                grid-area: 1 / 1 / span 1 / span 1;
+
+                transition: transform 0.7s ease-in-out; /* For smooth sliding */                       
+            }
+            
+            .c-layers {
+                flex: 0 0 100%;
+                display: flex;
+                justify-content: center;
+                z-index: 0;
+                margin-bottom: 1rem;
+                
+                .inner-layers {
+                    max-width: 100%;
+                    cursor: pointer;
+                    z-index: 1;
+                }
+            }
+            
+            .c-bottom-layer {
+                z-index: 0;
+                position: relative;
+                grid-area: 1 / 1 / span 1 / span 1;
+            }
+            
+            .mobile-text-container {
+                grid-area: 2 / 1 / span 1 / span 3;
+                
+                .carousel-text {
+                    height: 100px;                       
+                }
+            }
+        }
+    }
+}

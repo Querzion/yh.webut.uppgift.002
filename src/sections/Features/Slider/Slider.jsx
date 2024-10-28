@@ -7,7 +7,7 @@ const Slider = () => {
             <div className="container c-wrap">
 
                 <div className="c-title">
-                    <h2 className="h1 f800">How Does It Work?</h2>
+                    <h2 className="h1 f800 mb-2 pt-2">How Does It Work?</h2>
                 </div>
                 
                 <Carousel />

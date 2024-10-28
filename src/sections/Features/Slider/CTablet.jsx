@@ -107,7 +107,7 @@ const CTablet = () => {
     }, []);
 
     return (
-        <section className="tablet-carousel">
+        <section className="tablet-carousel pb-2">
             <div className="carousel-wrapper">
                 <div className="slide-bg t-shell-outline" aria-hidden="true">
                     <img id="t-shell-outline" src={imageTop} loading="lazy" alt="tablet top layer" className="bottom-layer" />
@@ -134,7 +134,7 @@ const CTablet = () => {
                 </div>
 
                 <div className="carousel-text-container">
-                    <h3 className="carousel-heading h5 f600">{tabletHeading}</h3>
+                    <h3 className="carousel-heading mt-1 mb-1 h5 f600">{tabletHeading}</h3>
                     <p className="carousel-text">{tabletText}</p>
                 </div>
             </div>
