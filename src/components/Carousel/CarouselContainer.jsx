@@ -1,11 +1,11 @@
 import React from 'react';
 
-function CarouselContainer({ images, text }) {
+function CarouselContainer({ images }) {
   return (
     <section className={`carousel ${images.type}-carousel`}>
       <div className="carousel-wrapper">
         <div className="carousel-grid">
-          {/* Top layer (for mobile) */}
+
           {images.top && (
             <div className="c-layers c-top-layer">
               <img src={images.top} loading="lazy" alt="top layer" className="outer-layers layer-1" aria-hidden="true" />
@@ -25,7 +25,6 @@ function CarouselContainer({ images, text }) {
             </div>
           </div>
 
-          {/* Bottom layer (for mobile) */}
           {images.bottom && (
             <div className="c-layers c-bottom-layer">
               <img src={images.bottom} loading="lazy" alt="bottom layer" className="outer-layers layer-3" aria-hidden="true" />

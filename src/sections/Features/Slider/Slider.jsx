@@ -1,5 +1,5 @@
 import React from 'react'
-import MainCarousel from '../../../components/Carousel/MainCarousel'
+import Carousel from '../../../components/Carousel/CarouselSwitch'
 
 const Slider = () => {
     return (
@@ -10,7 +10,7 @@ const Slider = () => {
                     <h2 className="h1 f800">How Does It Work?</h2>
                 </div>
                 
-                <MainCarousel />
+                <Carousel />
                 
             </div>
         </section>

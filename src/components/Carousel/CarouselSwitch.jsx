@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { desktopHeadlines, desktopTexts } from './DataDesktop';
-import { tabletHeadlines, tabletTexts } from './DataTablet';
-import CarouselDesktop from './CarouselDesktop';
-import CarouselTablet from './CarouselTablet';
-import CarouselMobile from './CarouselMobile';
+import { desktopHeadlines, desktopTexts } from './Desktop/DataDesktop';
+import { tabletHeadlines, tabletTexts } from './Tablet/DataTablet';
+import CarouselDesktop from './Desktop/CarouselDesktop';
+import CarouselTablet from './Tablet/CarouselTablet';
+import CarouselMobile from './Mobile/CarouselMobile';
+import Carousel from './CarouselT+';
 
-const MainCarousel = () => {
+const CarouselSwitch = () => {
   const [deviceType, setDeviceType] = useState('mobile');
 
   const updateDeviceType = () => {
@@ -44,4 +45,4 @@ const MainCarousel = () => {
   );
 };
 
-export default MainCarousel;
+export default CarouselSwitch;
