@@ -8,6 +8,8 @@ import appleAppStoreLight from "/src/assets/images/mainpage-light/showcase/appst
 import googlePlayStoreDark from "/src/assets/images/mainpage-dark/showcase/googleplay-dark.svg";
 import googlePlayStoreLight from "/src/assets/images/mainpage-light/showcase/googleplay-light.svg";
 
+// CODE IN MAJORITY WRITTEN BY CHATGPT! 
+
 const DarkMode = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
 
