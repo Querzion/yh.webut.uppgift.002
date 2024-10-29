@@ -23,12 +23,11 @@
     }
 
     header {
-        
-        .nav-link {
-            color: var(--color-gray-500);
 
-            &:hover {
-                color: var(--color-primary);
+        .nav-links {
+
+            .nav-link {
+                color: var(--color-white);
             }
         }
         

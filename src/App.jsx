@@ -1,12 +1,9 @@
 // import './App.css'
-import Header from './sections/Header/Header'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import Contact from "./pages/Contact/Contact";
 
-import Showcase from './sections/Showcase/Showcase'
-import Brands from './sections/Brands/Brands'
-import Features from './sections/Features/Features'
-import Testimonials from './sections/Testimonials/Testimonials'
-import FAQ from './sections/FAQ/FAQ'
-import Subscribe from './sections/Subscribe/Subscribe'
+import Header from './sections/Header/Header'
 import Footer from './sections/Footer/Footer'
 
 import './assets/scss/main.scss';
@@ -16,24 +13,18 @@ import './assets/scss/themes/themes.scss';
 function App() {
 
     return (
-        <>
-            
+        <BrowserRouter>
             <div className="wrapper">
                 <Header />
-                
                 <main>
-                    <Showcase />
-                    <Brands id="brands" />
-                    <Features />
-                    <Testimonials />
-                    <FAQ />
-                    <Subscribe />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/Contact" element={<Contact />} />
+                    </Routes>
                 </main>
-                
                 <Footer />
             </div>
-
-        </>
+        </BrowserRouter>
     )
 }
 

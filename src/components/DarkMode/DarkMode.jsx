@@ -21,16 +21,22 @@ const DarkMode = () => {
         } else {
             element.classList.remove("dark-mode");
         }
-
-        // Update logo images
+    
+        // Update logo images only if the elements exist in the DOM
         const logo = document.getElementById('logo-text');
-        logo.src = isDarkMode ? SiliconLogoTextDark : SiliconLogoTextLight;
-
+        if (logo) {
+            logo.src = isDarkMode ? SiliconLogoTextDark : SiliconLogoTextLight;
+        }
+    
         const appstore_logotype = document.getElementById('appstore');
-        appstore_logotype.src = isDarkMode ? appleAppStoreDark : appleAppStoreLight;
-
+        if (appstore_logotype) {
+            appstore_logotype.src = isDarkMode ? appleAppStoreDark : appleAppStoreLight;
+        }
+    
         const playstore_logotype = document.getElementById('playstore');
-        playstore_logotype.src = isDarkMode ? googlePlayStoreDark : googlePlayStoreLight;
+        if (playstore_logotype) {
+            playstore_logotype.src = isDarkMode ? googlePlayStoreDark : googlePlayStoreLight;
+        }
     }, [isDarkMode]);
 
     // Function to toggle dark mode

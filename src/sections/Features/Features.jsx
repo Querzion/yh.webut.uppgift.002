@@ -28,7 +28,7 @@ const Features = () => {
 
                 <div className="af-text-box">
                     <div className="af-text-above">
-                        <h2 className="h1 f800">App Features</h2>
+                        <h2 className="h1 f800 mb-2">App Features</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Proin volutpat mollis egestas. Nam luctus facilisis ultrices. 
                             Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
