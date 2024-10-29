@@ -1,5 +1,7 @@
 // import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useRef } from 'react';
+
 import Home from './pages/Home/Home';
 import Contact from "./pages/Contact/Contact";
 
@@ -9,13 +11,19 @@ import Footer from './sections/Footer/Footer'
 import './assets/scss/main.scss';
 import './assets/scss/themes/themes.scss';
 
-
+// reference is chatgpt. "/
 function App() {
+
+    const featuresRef = useRef(null);
+
+    const scrollToSection = (sectionRef) => {
+        sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    };
 
     return (
         <BrowserRouter>
             <div className="wrapper">
-                <Header />
+                <Header scrollToFeatures={() => scrollToSection(featuresRef)} />
                 <main>
                     <Routes>
                         <Route path="/" element={<Home />} />

@@ -36,7 +36,7 @@
     /* MEMO: -webkit-sticky is for Safari */
     .sticky-header {
         position: -webkit-sticky; 
-        position: relative;
+        position: sticky;
         top: 0;
         left: 0;
         width: 100%;

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 import appleAppStore from "/src/assets/images/mainpage-light/showcase/appstore-light.svg"
 import googlePlayStore from "/src/assets/images/mainpage-light/showcase/googleplay-light.svg"
@@ -23,15 +24,15 @@ const Showcase = () => {
                         We offer you a new generation of the mobile banking. <span className="tablet-line-break"><br/></span> Save, spend & manage money in your pocket.
                     </p>
                     <div className="buttons">
-                        <a className="btn-download-app" href="#"><img id="appstore" src={appleAppStore} alt="appstore" /></a>
-                        <a className="btn-download-app" href="#"><img id="playstore" src={googlePlayStore} alt="playstore" /></a>
+                        <a className="btn-download-app" href="https://www.apple.com/app-store/" target="_blank"><img id="appstore" src={appleAppStore} alt="appstore" /></a>
+                        <a className="btn-download-app" href="https://play.google.com/store/" target="_blank"><img id="playstore" src={googlePlayStore} alt="playstore" /></a>
                     </div>
-                    <a href="#carousel-section" className="discover-more">
+                    <Link to="/#brands" className="discover-more">
                         <span className="btn-circle">
                             <i className="fa-solid fa-chevron-down"></i>
                         </span>
                         <span className="changecolordamnit">Discover more</span>
-                    </a>
+                    </Link>
                 </div>
           
                 <div className="images">

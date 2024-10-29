@@ -39,7 +39,7 @@ const Navbar = () => {
                     <div className="nav-links">
                         <NavLink 
                             className={`nav-link ${darkMode ? 'dark-mode' : ''}`} 
-                            to="/#brands" 
+                            to="/#features"
                         >
                             Features
                         </NavLink>
