@@ -1,5 +1,5 @@
 .dark-mode {
-    #contact-section {
+    #contact {
         .contact-bg {
             background-color: var(--color-gray-100-dark);
             
@@ -13,7 +13,7 @@
                         
                         .btn {
                             box-shadow: 0 5px 15px var(--color-gray-700);;
-                            
+                            cursor: pointer;
                         }
                     }
                 }
@@ -38,7 +38,7 @@
     }
 }
 
-#contact-section {
+#contact {
     
     .contact-bg {
         padding-top: 5rem;
