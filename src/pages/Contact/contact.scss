@@ -39,10 +39,22 @@
 }
 
 #contact {
-    
+
+    h1, h2, p {
+        text-align: center;
+
+        @media (width > 768px) {
+            text-align: left;
+        }
+    }
+
     .contact-bg {
         padding-top: 5rem;
         background-color: var(--color-gray-200);
+
+        @media (width > 1400px){
+            padding-bottom: 4rem;       
+        }
         
         .link-tree {
             margin-top: 2rem;
@@ -61,11 +73,12 @@
                 color: var(--color-primary);
             }
         }
-
+        
         .contact-upper {
             padding-top: 1rem;
-            padding-bottom: 7rem;
+            padding-bottom: 3rem;
 
+            
             h1 {
                 font-size: 2.4rem;
                 font-weight: 800;
@@ -74,13 +87,25 @@
             .contact-info-upper {
                 display: grid;
                 position: relative;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr;
+
+                @media (width > 1400px) {
+                    grid-template-columns: 1fr 1fr;
+                }
 
                 .cards-box {
                     
                     .cards {
                         grid-template-columns: 1fr;
                         
+                        @media (width > 768px) and (width < 1400px){
+                            display: flex;       
+                        }
+                        
+                        @media (width > 1400px) {
+                            grid-template-columns: 1fr 1fr;
+                        }
+
                         .card {
                             display: flex;
                             gap: 1.3rem;
@@ -113,17 +138,25 @@
                 
                 .consultation-form {
                     display: grid;
-                    position: absolute;
-                    right: 0;
                     grid-template-columns: 1fr;
                     background-color: var(--color-white);
-                    padding: 4rem;
+                    padding: 2rem 1rem;
                     border-radius: 0.5rem;
                     box-shadow: 0 0 15px var(--color-gray-500);
                     overflow: hidden;
                     gap: 1.2rem;
-                    width: 625px;
                     margin-top: 2rem;
+                   
+                    @media (width > 768px) and (width < 1400px){
+                        padding: 3rem 2rem;      
+                    }
+
+                    @media (width > 1400px) {
+                        position: absolute;
+                        right: 0;
+                        padding: 4rem;
+                        width: 625px;
+                    }
 
                     h2 {
                         margin-top: 0;
@@ -171,10 +204,14 @@
                         border: none;
                         width: 100%;
                         padding: 1rem;
-                        margin-top: 7rem;
+                        margin-top: 4rem;
                         font-weight: 600;
                         font-size: 1rem;
                         box-shadow: 0 5px 15px var(--color-gray-500);
+
+                        @media (width > 1400px) {
+                            margin-top: 7rem;
+                        }
                     }
                 }
             }
@@ -182,28 +219,46 @@
     }
     
     .contact-lower {
-        margin-top: 14rem;
-        margin-bottom: 30rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+
+        @media (width > 768px) { 
+            margin-bottom: 10rem;
+        }
+
+        @media (width > 1400px) {
+            margin-top: 14rem;
+            margin-bottom: 30rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
         
         .map {
+            display: none;
 
             img {
                 border-radius: .5rem;
                 width: 100%;
             }
+            
+            @media (width > 768px) {
+                display: block;
+            }
+            @media (width > 768px) and (width < 1400px){
+                margin-bottom: 2rem;      
+            }
         }
 
         .cards {
-            margin-left: 10rem;
             
             .card {
                 font-size: 1rem;
-    
-
+                
                 .card-address, .card-number, .card-open {
                     display: flex;
+
                     gap: .5rem;
                     padding-bottom: .8rem;
 
@@ -211,20 +266,42 @@
                         font-weight: 600;
                     }
                 }
+
+            }
+
+            @media (width > 768px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            @media (width > 1400px) {
+                grid-template-columns: 1fr;
+                margin-left: 10rem;
             }
 
             .social-media-links {
                 display: flex;
                 font-size: .8rem;
                 gap: .5rem;
-                margin-top: 6rem;
+                margin-top: 2rem;
                 
+                @media (width < 768px) {
+                    justify-content: center;   
+                }
+
+                @media (width > 1400px) {
+                    margin-top: 3rem;
+                }
                 
                 a {
                     color: var(--color-gray-800);
                     background-color: var(--color-gray-100);
                     padding: .8rem 1rem;
                     border-radius: .3rem;
+
+                    @media (width > 1400px) {
+                        height: fit-content;
+                    }
                 }
                 
                 .smaller {
@@ -233,10 +310,23 @@
                 }
             }
         }
-        
     }
+}
+
+
+
+@media (width > 1400px) {
+
+    #contact {
+
+        
+        
+        .contact-lower {
+            
+            
+            
     
-    @media (width < 1400px) {
-        display: none;
+            
+        }
     }
 }

@@ -41,7 +41,7 @@ const Contact = () => {
                                                   </div>
                                               </div>
                                           </div>
-                                          <div className="mt-1 card">
+                                          <div className="card">
                                               <div className="card-btn btn-circle">
                                                   <img src={iconGroup} alt="icon group" />
                                               </div>
@@ -119,7 +119,7 @@ const Contact = () => {
                                       </div>
                                   </div>
                               </div>
-                              <div className="card mt-1">
+                              <div className="card">
                                   <h2 className="lgt mb-1">Medical Center 2</h2>
                                   <div className="card-address">
                                       <img src={iconGps} alt="icon gps" />
