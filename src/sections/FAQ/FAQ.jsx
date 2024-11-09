@@ -1,60 +1,12 @@
 // FAQ.jsx
 
-import React, { useContext, useEffect, useState } from 'react';
-import Accordion from '../../components/Accordion/Accordion';
+import React from 'react';
 import iconPhone from "../../assets/images/mainpage-light/faq/icon-phone-light.svg";
 import iconBubble from "../../assets/images/mainpage-light/faq/icon-bubble-light.svg";
 
-import { DataContext } from '../../contexts/DataProvider';
+import FAQList from './FAQList';
 
 const FAQ = () => {
-    const [openAccordionId, setOpenAccordionId] = useState(null);
-
-    const toggleAccordion = (id) => {
-        setOpenAccordionId(prevId => (prevId === id ? null : id));
-    };
-
-    const { data, fetchData} = useContext(DataContext);
-
-    useEffect(() => {
-        fetchData('faq');
-    }, [fetchData])
-
-    // const faqs = [
-    //     { 
-    //         id: "a1", 
-    //         question: "Is any of my personal information stored in the app?", 
-    //         answer: "Lorem ipsum..." 
-    //     },
-    //     { 
-    //         id: "a2", 
-    //         question: "What formats can I download my transaction history in?", 
-    //         answer: "Lorem ipsum..." 
-    //     },
-    //     { 
-    //         id: "a3", 
-    //         question: "Can I schedule future transfers?", 
-    //         answer: "Lorem ipsum..." 
-    //     },
-    //     { 
-    //         id: "a4", 
-    //         question: "When can I use Banking App services?", 
-    //         answer: "Lorem ipsum..." 
-    //     },
-    //     { 
-    //         id: "a5", 
-    //         question: "Can I create my own password that is easy for me to remember?", 
-    //         answer: "Lorem ipsum..." 
-    //     },
-    //     { 
-    //         id: "a6", 
-    //         question: "What happens if I forget or lose my password?", 
-    //         answer: "Lorem ipsum..." 
-    //     },
-    // ];
-
-
-
     return (
         <section id="faq" className="mt-4" aria-label="Frequently asked questions">
             <div className="container faq-container">
@@ -64,18 +16,8 @@ const FAQ = () => {
                         <p>Still have unanswered questions and need to get in touch?</p>
                     </div>
                 </div>
-                <div className="faq-accordion-box">
-                    {data.map(faq => (
-                        <Accordion
-                            key={faq.id}
-                            id={faq.id}
-                            question={faq.title}
-                            answer={faq.content}
-                            isOpen={openAccordionId === faq.id}
-                            toggleAccordion={() => toggleAccordion(faq.id)}
-                        />
-                    ))}
-                </div>
+                
+                <FAQList />
 
                 <div className="faq-m-contact">
                     <button id="m-contact-btn" className="btn btn-primary" aria-label="contact us now">
