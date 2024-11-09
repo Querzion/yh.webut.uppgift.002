@@ -3,20 +3,21 @@ import { useLocation } from 'react-router-dom';
 
 import Slider from "./Slider/Slider"
 
-import imageIphoneVisa from "/src/assets/images/mainpage-light/Features/phone-visa.svg"
-import featurePayments from "/src/assets/images/mainpage-light/Features/payments.svg"
-import featureSecurity from "/src/assets/images/mainpage-light/Features/security.svg"
-import featureStatistics from "/src/assets/images/mainpage-light/Features/statistics.svg"
-import featureSupport from "/src/assets/images/mainpage-light/Features/support.svg"
-import featureHappy from "/src/assets/images/mainpage-light/Features/happy.svg"
-import featureCashback from "/src/assets/images/mainpage-light/Features/cashback.svg"
+import imageIphoneVisa from "../../assets/images/mainpage-light/features/phone-visa.svg"
 
-import iconCheckMark from "/src/assets/images/mainpage-light/Features/icon-l-checkmark-light.svg"
+import featurePayments from "/src/assets/images/mainpage-light/features/payments.svg"
+import featureSecurity from "/src/assets/images/mainpage-light/features/security.svg"
+import featureStatistics from "/src/assets/images/mainpage-light/features/statistics.svg"
+import featureSupport from "/src/assets/images/mainpage-light/features/support.svg"
+import featureHappy from "/src/assets/images/mainpage-light/features/happy.svg"
+import featureCashback from "/src/assets/images/mainpage-light/features/cashback.svg"
 
-import imageForecast from "/src/assets/images/mainpage-light/Features/f2-1-back.svg"
-import imageSendTo from "/src/assets/images/mainpage-light/Features/f2-1-front.svg"
-import imageContacts from "/src/assets/images/mainpage-light/Features/f2-2-back.svg"
-import imageVisaCard from "/src/assets/images/mainpage-light/Features/f2-2-front.svg"
+import iconCheckMark from "/src/assets/images/mainpage-light/features/icon-l-checkmark-light.svg"
+
+import imageForecast from "/src/assets/images/mainpage-light/features/f2-1-back.svg"
+import imageSendTo from "/src/assets/images/mainpage-light/features/f2-1-front.svg"
+import imageContacts from "/src/assets/images/mainpage-light/features/f2-2-back.svg"
+import imageVisaCard from "/src/assets/images/mainpage-light/features/f2-2-front.svg"
 
 
 
