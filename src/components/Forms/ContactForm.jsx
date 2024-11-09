@@ -3,21 +3,37 @@ import { ValidationContext } from '../../contexts/ValidationProvider'
 
 const ContactForm = () => {
     const { handleInputChange, handleSubmit, formData, errors } = useContext(ValidationContext)
-    
+
     return (
-        <form id="consultation-form" className="consultation-form">
+        <form id="consultation-form" className="consultation-form" onSubmit={handleSubmit} noValidate>
             <h2 className="h2">Get Online Consultation</h2>
 
             <div className="input-group">
                 <label htmlFor="fullName" className="form-label">Full Name</label>
-                <input type="text" id="fullName" className="form-input" required />
-                <p className="invalid-input">Error msg.</p>
+                <input 
+                    type="text" 
+                    id="fullName"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleInputChange} 
+                    className="form-input" 
+                    required 
+                />
+                {errors.name && <span className="validation-error">{errors.name}</span>}
             </div>
                                                 
             <div className="input-group">
                 <label htmlFor="email" className="form-label">E-mail address</label>
-                <input type="email" id="email" className="form-input" required />
-                <p className="invalid-input">Error msg.</p>
+                <input 
+                    type="email" 
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange} 
+                    className="form-input" 
+                    required 
+                />
+                {errors.email && <span className="validation-error">{errors.email}</span>}
             </div>
             
             <div className="input-group">
@@ -31,7 +47,7 @@ const ContactForm = () => {
                         <option value="">Tell me.</option>
                     </select>
                 </div>
-                <p className="invalid-input">Error msg.</p>
+                {errors.specialist && <span className="validation-error">{errors.specialist}</span>}
             </div>
 
             <button id="submit-btn" type="submit" className="btn btn-primary">
