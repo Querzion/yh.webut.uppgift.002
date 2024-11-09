@@ -10,7 +10,7 @@ import Footer from './sections/Footer/Footer'
 
 import './assets/scss/main.scss';
 import './assets/scss/themes/themes.scss';
-// import DataProvider from './contexts/DataProvider';
+import ValidationProvider from './contexts/ValidationProvider';
 
 // reference is chatgpt. "/
 function App() {
@@ -22,7 +22,7 @@ function App() {
     };
 
     return (
-        // <DataProvider>
+        <ValidationProvider>
             <BrowserRouter>
                 <div className="wrapper">
                     <Header scrollToFeatures={() => scrollToSection(featuresRef)} />
@@ -35,7 +35,7 @@ function App() {
                     <Footer />
                 </div>
             </BrowserRouter>
-        // </DataProvider>
+        </ValidationProvider>
     )
 }
 

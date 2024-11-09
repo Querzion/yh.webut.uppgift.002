@@ -48,6 +48,8 @@
         font-weight: 800;
         gap: 1rem;
 
+        align-items: center;
+
         @media (min-width: 768px) {
 
             #img-text-md {
@@ -61,13 +63,13 @@
         
         
         h2 {
-            font-size: 21.6px;
+            font-size: 1.2rem;
 
             @media (min-width: 768px) {
-                font-size: 22.7px;
+                // font-size: 22.7px;
                 
                 @media (min-width: 1400px) {
-                    font-size: 24px;
+                    // font-size: 24px;
                 }
             }
         }
@@ -100,41 +102,42 @@
         }
         
         .sub-border {
-            display: grid;
-            grid-template-columns: 2fr auto;
-            justify-content: center;
-            align-content: center;
-            border: 1px solid var(--color-gray-400);
-            border-radius: .5rem;
-            overflow: hidden;
-            max-height: 50px;
-            
-            
-            #sub-scribe {
-                justify-content: center;
-                align-content: center;
-                /* padding: 1rem; */
+
+            .input-box {
+                display: flex;
+                border: 1px solid var(--color-gray-400);
+                border-radius: .5rem;
+                overflow: hidden;
+                max-height: 50px;
             }
             
             .input-field {
                 position: relative;
-                height: 100%;
+                width: 100%;
                 
                 .email {
-                    grid-column: 1 / span 2 ;
+                    height: 100%;
                     width: 100%;
                     padding: 1rem;
                     padding-left: 2.4rem;
                     border: none;
                 }
+
+            }
+
+            span {
+                margin-left: 3rem;
+            }
+
+            .validation-error {
+                color: firebrick;
+                font-size: .8rem;
             }
             
             .icon {
                 position: absolute;
-
                 top: 50%;
                 left: .7rem;
-
                 transform: translateY(-50%);
             }
 
