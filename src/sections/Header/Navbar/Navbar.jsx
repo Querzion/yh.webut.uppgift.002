@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from "react-router-dom";
 import SiliconLogo from "../../../assets/images/mainpage-light/navbar/silicon-logo.svg";
 import DarkMode from '../../../components/DarkMode/DarkMode';
-import Menu from '../../../components/Menu/Menu';
+import MenuButton from '../../../components/Menu/MenuButton';
 
 // DarkMode had some problems, so the useEffect and links. is a ChatGPT exchange.
 
@@ -60,7 +60,7 @@ const Navbar = () => {
                     <span>Sign in / up</span>
                 </Link>
                 
-                <Menu />
+                <MenuButton />
                 
             </div>
         </section>
