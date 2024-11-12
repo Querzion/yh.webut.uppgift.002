@@ -11,13 +11,13 @@
     right: 0;
     max-width: 100%;
     width: 300rem;
-    height: 100vh;
+    height: 100%;
     z-index: 1000;
     
     ul {
         display: grid;
         list-style-type: none;
-        gap: 1rem;
+        gap: 3rem;
     }
     
     a {
@@ -26,7 +26,6 @@
     
         &:hover {
             font-size: 2.5rem;
-            gap: 3rem;
         }
     }   
     

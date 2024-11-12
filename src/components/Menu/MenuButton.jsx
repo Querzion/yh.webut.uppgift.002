@@ -20,9 +20,9 @@ const MenuButton = () => {
             {showMenu && (
                 <div className="menu-box">
                     <ul className="f600 h4"> 
-                        <li><Link to="/" >Home</Link></li>
-                        <li><Link to="/#features" >Features</Link></li>
-                        <li><Link to="/Contact" >Contact</Link></li>
+                        <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+                        <li><Link to="/#features" onClick={toggleMenu}>Features</Link></li>
+                        <li><Link to="/Contact" onClick={toggleMenu}>Contact</Link></li>
                     </ul>
                 </div>
             )}
