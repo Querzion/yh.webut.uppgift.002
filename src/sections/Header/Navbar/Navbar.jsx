@@ -7,13 +7,8 @@ import MenuButton from '../../../components/Menu/MenuButton';
 // DarkMode had some problems, so the useEffect and links. is a ChatGPT exchange.
 
 const Navbar = () => {
-    const [showMenu, setShowMenu] = useState(false);
     const [darkMode, setDarkMode] = useState(false);
-
-    const toggleMenu = () => {
-        setShowMenu(!showMenu);
-    };
-
+    
     useEffect(() => {
         const checkDarkMode = () => {
             const body = document.body;
