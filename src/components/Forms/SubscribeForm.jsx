@@ -5,6 +5,7 @@ import iconMailGray from "../../assets/images/mainpage-light/subscribe/icon-mail
 
 const SubscribeForm = () => {
     const { handleInputChange, handleSubmit, formData, errors } = useContext(ValidationContext)
+
     return (
         <form id="subscriptionForm" onSubmit={handleSubmit} noValidate>
             <div className="input-box">

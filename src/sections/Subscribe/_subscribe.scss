@@ -13,6 +13,17 @@
             display: grid;
             justify-items: center;
         }
+
+        .subscribed {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            align-items: center;
+            border-radius: .5rem;
+            padding: 3rem 0;
+            width: 100%;
+            background-color: var(--color-gray-100);
+        }
     }
 }
 

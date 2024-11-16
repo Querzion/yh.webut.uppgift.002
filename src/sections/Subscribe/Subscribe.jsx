@@ -1,9 +1,27 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { ValidationContext } from '../../contexts/ValidationProvider'
 
 import imageNotification from "../../assets/images/mainpage-light/subscribe/notification.svg"
 import SubscribeForm from '../../components/Forms/SubscribeForm'
 
 const Subscribe = () => {
+    const { submitted } = useContext(ValidationContext)
+
+    if (submitted) {
+        return (
+            <section id="subscribe"  aria-label="subscribe section">
+
+                <div className="container center">
+                    
+                    <h2 className="subscribed h3">Thank you for subscribing to our newsletter!</h2>
+
+                </div>
+
+            </section>
+        )
+    }
+    
+
     return (
         <section id="subscribe"  aria-label="subscribe section">
 

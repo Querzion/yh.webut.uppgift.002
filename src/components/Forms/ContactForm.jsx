@@ -2,64 +2,76 @@ import React, { useContext } from "react";
 import { ValidationContext } from "../../contexts/ValidationProvider";
 
 const ContactForm = () => {
-  const { handleInputChange, handleSubmit, formData, errors, options } = useContext(ValidationContext);
+    const { handleInputChange, handleSubmit, formData, errors, options, submitted, handleOk } = useContext(ValidationContext);
 
-  return (
-    <form id="consultationForm" className="consultation-form" onSubmit={handleSubmit} noValidate>
-      <h2 className="h2">Get Online Consultation</h2>
+    if (submitted) {
+        return (
+            <div className="submit-success consultation-form">
+                <h1>We will be in touch.</h1>
+                <p>As soon as possible. Thank you for contacting us. </p>
+                <button id="submit-btn" type="submit" className="btn btn-primary" onClick={handleOk}>
+                    <span id="buttonText">Make new appointment</span>
+                </button>
+            </div>
+        )
+    }
 
-      <div className="input-group">
-        <label htmlFor="fullName" className="form-label">Full Name</label>
-        <input
-          type="text"
-          id="fullName"
-          name="fullName"
-          value={formData.fullName}
-          onChange={handleInputChange}
-          className="form-input"
-          required
-        />
-        {errors.fullName && <span className="validation-error">{errors.fullName}</span>}
-      </div>
+    return (
+        <form id="consultationForm" className="consultation-form" onSubmit={handleSubmit} noValidate>
+        <h2 className="h2">Get Online Consultation</h2>
 
-      <div className="input-group">
-        <label htmlFor="email" className="form-label">E-mail address</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleInputChange}
-          className="form-input"
-          required
-        />
-        {errors.email && <span className="validation-error">{errors.email}</span>}
-      </div>
-
-      <div className="input-group">
-        <label htmlFor="specialist" className="form-label">Specialist</label>
-        <div className="select-box">
-          <select
-            name="specialist"
-            id="specialist"
-            className="form-list"
-            value={formData.specialist}
+        <div className="input-group">
+            <label htmlFor="fullName" className="form-label">Full Name</label>
+            <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            value={formData.fullName}
             onChange={handleInputChange}
+            className="form-input"
             required
-          >
-            {options.map((option) => (
-              <option key={option.id} value={option.id}>{option.text}</option>
-            ))}
-          </select>
+            />
+            {errors.fullName && <span className="validation-error">{errors.fullName}</span>}
         </div>
-        {errors.specialist && <span className="validation-error">{errors.specialist}</span>}
-      </div>
 
-      <button id="submit-btn" type="submit" className="btn btn-primary">
-        <span id="buttonText">Make an appointment</span>
-      </button>
-    </form>
-  );
+        <div className="input-group">
+            <label htmlFor="email" className="form-label">E-mail address</label>
+            <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleInputChange}
+            className="form-input"
+            required
+            />
+            {errors.email && <span className="validation-error">{errors.email}</span>}
+        </div>
+
+        <div className="input-group">
+            <label htmlFor="specialist" className="form-label">Specialist</label>
+            <div className="select-box">
+            <select
+                name="specialist"
+                id="specialist"
+                className="form-list"
+                value={formData.specialist}
+                onChange={handleInputChange}
+                required
+            >
+                {options.map((option) => (
+                <option key={option.id} value={option.id}>{option.text}</option>
+                ))}
+            </select>
+            </div>
+            {errors.specialist && <span className="validation-error">{errors.specialist}</span>}
+        </div>
+
+        <button id="submit-btn" type="submit" className="btn btn-primary">
+            <span id="buttonText">Make an appointment</span>
+        </button>
+        </form>
+    );
 };
 
 export default ContactForm;

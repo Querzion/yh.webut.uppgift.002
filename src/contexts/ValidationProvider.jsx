@@ -19,6 +19,7 @@ const ValidationProvider = ({ children }) => {
     });
 
     const [errors, setErrors] = useState({});
+    const [submitted, setSubmitted] = useState(false)
 
     // / = start and end of regular expression
     // ^ = start of active string
@@ -93,6 +94,10 @@ const ValidationProvider = ({ children }) => {
         validateField(name, value);
     };
     
+    const handleOk = () => {
+        setSubmitted(false)
+    }
+
     // ChatGPT intervention on the validateForm .then / .catch
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -111,11 +116,25 @@ const ValidationProvider = ({ children }) => {
 
                 if (res.status === 200) {
                     console.log("Successfull submit.");
-                    alert("Subscription form was submitted successfully.");
-                } else {
-                    console.log("Error.");
-                    alert("There was an error. Action aborted. Please, contact the support.");
-                }
+                    // alert("Subscription form was submitted successfully.");
+
+                    // const data = await res.text()
+                    // console.log(data);
+
+                    setSubmitted(true);
+                    setFormData({
+                        fullName: "",
+                        email: "",
+                        specialist: options[0].id
+                    })
+                } 
+                // else {
+                //     console.log("Error.");
+                //     alert("There was an error. Action aborted. Please, contact the support.");
+
+                //     const data = await res.json()
+                //     console.log(data);
+                // }
                 
             } else {
                 console.log("Form is invalid");
@@ -140,11 +159,25 @@ const ValidationProvider = ({ children }) => {
 
                 if (res.status === 200) {
                     console.log("Successfull submit.");
-                    alert("Contact form was submitted successfully.");
-                } else {
-                    console.log("Error.");
-                    alert("There was an error. Action aborted. Please, contact the support.");
-                }
+                    // alert("Subscription form was submitted successfully.");
+
+                    // const data = await res.text()
+                    // console.log(data);
+
+                    setSubmitted(true);
+                    setFormData({
+                        fullName: "",
+                        email: "",
+                        specialist: options[0].id
+                    })
+                } 
+                // else {
+                //     console.log("Error.");
+                //     alert("There was an error. Action aborted. Please, contact the support.");
+
+                //     const data = await res.json()
+                //     console.log(data);
+                // }
 
             } else {
                 console.log("Form is invalid");
@@ -160,6 +193,8 @@ const ValidationProvider = ({ children }) => {
             formData,
             errors,
             options,
+            submitted,
+            handleOk,
             }}
         >
             {children}
