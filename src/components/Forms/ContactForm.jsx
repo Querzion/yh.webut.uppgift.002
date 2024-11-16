@@ -5,7 +5,7 @@ const ContactForm = () => {
   const { handleInputChange, handleSubmit, formData, errors, options } = useContext(ValidationContext);
 
   return (
-    <form id="consultation-form" className="consultation-form" onSubmit={handleSubmit} noValidate>
+    <form id="consultationForm" className="consultation-form" onSubmit={handleSubmit} noValidate>
       <h2 className="h2">Get Online Consultation</h2>
 
       <div className="input-group">

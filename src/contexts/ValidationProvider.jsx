@@ -15,7 +15,6 @@ const ValidationProvider = ({ children }) => {
     const [formData, setFormData] = useState({
         fullName: "",
         email: "",
-        subscribe: "",
         specialist: options[0].id, // Default to the first specialist
     });
 
@@ -53,15 +52,23 @@ const ValidationProvider = ({ children }) => {
             error = "It has to be a valid email address. (eg. username@example.com)";
         } else if (name === "specialist" && name === "") {
             error = "Please select a specialist.";
-        } else if (name === "subscribe" && !regularExpressionEmail.test(value)) {
-            error = "It has to be a valid email address. (eg. username@example.com)";
         }
 
         setErrors((prevErrors) => ({ ...prevErrors, [name]: error }));
     };
+    
+    const validateSubscriptionForm = () => {
+        const newErrors = {};
 
-    // Full form validation
-    const validateForm = () => {
+        if (!regularExpressionEmail.test(formData.email)) {
+            newErrors.email = "It has to be a valid email address. (eg. username@example.com)";
+        }
+
+        setErrors(newErrors);
+            return Object.keys(newErrors).length === 0;
+    }
+
+    const validateConsultationForm = () => {
         const newErrors = {};
 
         if (!regularExpressionFullName.test(formData.fullName)) {
@@ -76,13 +83,9 @@ const ValidationProvider = ({ children }) => {
             newErrors.specialist = "Please select a specialist.";
         }
 
-        if (!regularExpressionEmail.test(formData.subscribe)) {
-            newErrors.subscribe = "It has to be a valid email address. (eg. username@example.com)";
-        }
-
         setErrors(newErrors);
             return Object.keys(newErrors).length === 0;
-    };
+    }
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -91,55 +94,61 @@ const ValidationProvider = ({ children }) => {
     };
     
     // ChatGPT intervention on the validateForm .then / .catch
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         
-        if (validateForm()) {
-            console.log("Form is valid");
+        if (e.target.id === "subscriptionForm") {
             
-            if (e.target.id === "sub-scribe") {
-                
-                fetch("https://win24-assignment.azurewebsites.net/api/forms/subscribe", {
+            if (validateSubscriptionForm()) {
+                console.log("Subscribe form is valid");
+
+                const res = await fetch("https://win24-assignment.azurewebsites.net/api/forms/subscribe", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ email: formData.subscribe }),
-                })
-                
-                .then((response) => response.json())
-                
-                .then((data) => {
-                    console.log("Subscribe form submitted successfully:", data);
-                })
-                
-                .catch((error) => {
-                    console.error("Error submitting subscribe form:", error);
+                    body: JSON.stringify({ email: formData.email })
+                    
                 });
+
+                if (res.status === 200) {
+                    console.log("Successfull submit.");
+                    alert("Subscription form was submitted successfully.");
+                } else {
+                    console.log("Error.");
+                    alert("There was an error. Action aborted. Please, contact the support.");
+                }
                 
-            } else if (e.target.id === "consultation-form") {
-                
-                fetch("https://win24-assignment.azurewebsites.net/api/forms/contact", {
+            } else {
+                console.log("Form is invalid");
+            }
+            
+        } 
+        
+        if (e.target.id === "consultationForm") {
+            
+            if (validateConsultationForm()) {
+                console.log("Consultation form is valid");
+
+                const res = await fetch("https://win24-assignment.azurewebsites.net/api/forms/contact", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
-                        name: formData.fullName,
+                        fullName: formData.fullName,
                         email: formData.email,
                         specialist: formData.specialist,
                     }),
                 })
 
-                .then((response) => response.json())
-                
-                .then((data) => {
-                    console.log("Contact form submitted successfully:", data);
-                })
-                
-                .catch((error) => {
-                    console.error("Error submitting contact form:", error);
-                });
+                if (res.status === 200) {
+                    console.log("Successfull submit.");
+                    alert("Contact form was submitted successfully.");
+                } else {
+                    console.log("Error.");
+                    alert("There was an error. Action aborted. Please, contact the support.");
+                }
+
+            } else {
+                console.log("Form is invalid");
             }
-            
-        } else {
-            console.log("Form is invalid");
         }
     };
 
@@ -150,7 +159,7 @@ const ValidationProvider = ({ children }) => {
             handleSubmit,
             formData,
             errors,
-            options, // Add options to the context value
+            options,
             }}
         >
             {children}

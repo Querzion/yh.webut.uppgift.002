@@ -6,17 +6,17 @@ import iconMailGray from "../../assets/images/mainpage-light/subscribe/icon-mail
 const SubscribeForm = () => {
     const { handleInputChange, handleSubmit, formData, errors } = useContext(ValidationContext)
     return (
-        <form id="sub-scribe" onSubmit={handleSubmit} noValidate>
+        <form id="subscriptionForm" onSubmit={handleSubmit} noValidate>
             <div className="input-box">
                 <div className="input-field">
                     <img className="icon" src={iconMailGray} alt="" />
                     {/* <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values --> */}
                     <input
                         type="email"
-                        id="subscribe"
-                        name="subscribe"
+                        id="email"
+                        name="email"
                         className="email"
-                        value={formData.subscribe}
+                        value={formData.email}
                         onChange={handleInputChange}
                         placeholder="Your Email"
                         autoComplete="off"
@@ -31,7 +31,7 @@ const SubscribeForm = () => {
                 </div>
 
             </div>
-            {errors.subscribe && <span className="validation-error">{errors.subscribe}</span>}
+            {errors.email && <span className="validation-error">{errors.email}</span>}
         </form>
     )
 }
