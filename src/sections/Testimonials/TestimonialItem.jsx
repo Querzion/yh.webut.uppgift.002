@@ -8,6 +8,7 @@ import starRating5 from "../../assets/images/mainpage-light/testimonials/icon-ra
 const TestimonialItem = ({item}) => {
     const [rating, setRating] = useState("");
 
+    // When I made this, it was just to solve the current situation, not to solve future events.
     useEffect(() => {
         if (item.starRating === 4) {
             setRating(starRating4);

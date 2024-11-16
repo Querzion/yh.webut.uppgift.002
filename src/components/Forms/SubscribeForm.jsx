@@ -8,16 +8,15 @@ const SubscribeForm = () => {
     return (
         <form id="sub-scribe" onSubmit={handleSubmit} noValidate>
             <div className="input-box">
-                
                 <div className="input-field">
                     <img className="icon" src={iconMailGray} alt="" />
                     {/* <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values --> */}
                     <input
                         type="email"
-                        id="email"
-                        name="email"
+                        id="subscribe"
+                        name="subscribe"
                         className="email"
-                        value={formData.email}
+                        value={formData.subscribe}
                         onChange={handleInputChange}
                         placeholder="Your Email"
                         autoComplete="off"
@@ -32,7 +31,7 @@ const SubscribeForm = () => {
                 </div>
 
             </div>
-            {errors.email && <span className="validation-error">{errors.email}</span>}
+            {errors.subscribe && <span className="validation-error">{errors.subscribe}</span>}
         </form>
     )
 }
